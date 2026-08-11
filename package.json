@@ -1,6 +1,6 @@
 {
   "name": "pulsevoice-desktop",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "private": true,
   "description": "PulseVoice desktop app — a standalone Electron shell around the PulseVoice web client (persistent tray connection for reliable inbound calls).",
   "author": "Pulse Technologies",
