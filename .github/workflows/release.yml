@@ -10,7 +10,14 @@ name: Build & publish desktop installers
 # proven on all three platforms before a tag is cut.
 
 on:
-  workflow_dispatch: {}
+  # Dry runs default to ON so a stray dispatch can never overwrite a published
+  # release's assets. Untick it only when you actually mean to publish.
+  workflow_dispatch:
+    inputs:
+      dry_run:
+        description: 'Build only — do not publish a release'
+        type: boolean
+        default: true
   push:
     tags: ['v*']
   pull_request:
@@ -50,10 +57,15 @@ jobs:
           APPLE_API_KEY_B64: ${{ matrix.os == 'macos-latest' && secrets.APPLE_API_KEY_B64 || '' }}
 
       - name: Build & publish installer
-        # Only tags and manual dispatches publish; PRs build to prove the config.
+        # Publishes only on a tag, or on a dispatch with dry_run unticked. PRs
+        # and dry runs build to prove the config without touching a release.
         # Notarization is opt-in on the presence of a signing cert, so unsigned
         # builds keep working until the Developer ID cert is in place.
-        run: npx electron-builder --publish ${{ github.event_name == 'pull_request' && 'never' || 'always' }} ${{ (matrix.os == 'macos-latest' && secrets.MAC_CSC_LINK != '') && '--config.mac.notarize=true' || '' }}
+        #
+        # NOTE a dry run is the ONLY way to exercise signing before tagging:
+        # electron-builder force-skips code signing on pull_request builds, so a
+        # green PR proves nothing about the certificate.
+        run: npx electron-builder --publish ${{ (github.event_name == 'pull_request' || inputs.dry_run) && 'never' || 'always' }} ${{ (matrix.os == 'macos-latest' && secrets.MAC_CSC_LINK != '') && '--config.mac.notarize=true' || '' }}
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           # macOS signing turns itself on the moment MAC_CSC_LINK exists. Until
@@ -81,3 +93,17 @@ jobs:
           AZURE_TENANT_ID: ${{ secrets.AZURE_TENANT_ID }}
           AZURE_CLIENT_ID: ${{ secrets.AZURE_CLIENT_ID }}
           AZURE_CLIENT_SECRET: ${{ secrets.AZURE_CLIENT_SECRET }}
+
+      # A dry run you can't inspect isn't worth much — keep the installers so a
+      # signed build can be pulled down and checked on a real Mac before a tag.
+      - name: Upload installers (non-publishing builds)
+        if: ${{ github.event_name == 'pull_request' || inputs.dry_run }}
+        uses: actions/upload-artifact@v4
+        with:
+          name: installers-${{ matrix.os }}
+          retention-days: 7
+          if-no-files-found: error
+          path: |
+            dist/*.exe
+            dist/*.dmg
+            dist/*.AppImage
