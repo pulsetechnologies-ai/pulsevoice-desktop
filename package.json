@@ -2,7 +2,7 @@
   "name": "pulsevoice-desktop",
   "version": "1.0.4",
   "private": true,
-  "description": "PulseVoice desktop app — a standalone Electron shell around the PulseVoice web client (persistent tray connection for reliable inbound calls).",
+  "description": "PulseVoice desktop app \u2014 a standalone Electron shell around the PulseVoice web client (persistent tray connection for reliable inbound calls).",
   "author": "Pulse Technologies",
   "homepage": "https://www.pulsetechnologies.ai/download",
   "main": "main.js",
@@ -20,9 +20,22 @@
   "build": {
     "appId": "ai.pulsevoice.desktop",
     "productName": "PulseVoice",
-    "files": ["main.js", "preload.js", "build/icon.png"],
-    "directories": { "output": "dist", "buildResources": "build" },
-    "publish": [{ "provider": "github", "owner": "abarnes006", "repo": "pulsevoice-desktop" }],
+    "files": [
+      "main.js",
+      "preload.js",
+      "build/icon.png"
+    ],
+    "directories": {
+      "output": "dist",
+      "buildResources": "build"
+    },
+    "publish": [
+      {
+        "provider": "github",
+        "owner": "pulsetechnologies-ai",
+        "repo": "pulsevoice-desktop"
+      }
+    ],
     "win": {
       "target": "nsis",
       "artifactName": "PulseVoice-Setup.${ext}",
@@ -33,8 +46,34 @@
         "certificateProfileName": "pulsevoice-desktop"
       }
     },
-    "nsis": { "oneClick": false, "allowToChangeInstallationDirectory": true },
-    "mac": { "target": "dmg", "category": "public.app-category.business", "identity": null, "artifactName": "PulseVoice.${ext}" },
-    "linux": { "target": "AppImage", "category": "Network", "artifactName": "PulseVoice.${ext}" }
+    "nsis": {
+      "oneClick": false,
+      "allowToChangeInstallationDirectory": true
+    },
+    "mac": {
+      "target": [
+        {
+          "target": "dmg",
+          "arch": [
+            "universal"
+          ]
+        }
+      ],
+      "category": "public.app-category.business",
+      "artifactName": "PulseVoice.${ext}",
+      "hardenedRuntime": true,
+      "gatekeeperAssess": false,
+      "entitlements": "build/entitlements.mac.plist",
+      "entitlementsInherit": "build/entitlements.mac.plist",
+      "extendInfo": {
+        "NSMicrophoneUsageDescription": "PulseVoice uses your microphone for calls.",
+        "NSCameraUsageDescription": "PulseVoice uses your camera for video calls."
+      }
+    },
+    "linux": {
+      "target": "AppImage",
+      "category": "Network",
+      "artifactName": "PulseVoice.${ext}"
+    }
   }
 }
