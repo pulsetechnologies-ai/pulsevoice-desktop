@@ -5,11 +5,15 @@ name: Build & publish desktop installers
 # builds fail on the winCodeSign symlink step) and publishes them as public
 # release assets with stable names, so the website can link to
 # /releases/latest/download/PulseVoice-Setup.exe (etc.).
+#
+# Pull requests build the same matrix but never publish, so config changes are
+# proven on all three platforms before a tag is cut.
 
 on:
   workflow_dispatch: {}
   push:
     tags: ['v*']
+  pull_request:
 
 permissions:
   contents: write
@@ -28,14 +32,26 @@ jobs:
           node-version: '20'
       - run: npm install
       - name: Build & publish installer
-        run: npx electron-builder --publish always
+        # Only tags and manual dispatches publish; PRs build to prove the config.
+        # Notarization is opt-in on the presence of a signing cert, so unsigned
+        # builds keep working until the Developer ID cert is in place.
+        run: npx electron-builder --publish ${{ github.event_name == 'pull_request' && 'never' || 'always' }} ${{ (matrix.os == 'macos-latest' && secrets.MAC_CSC_LINK != '') && '--config.mac.notarize=true' || '' }}
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          # macOS has no cert yet — skip auto code-sign discovery so it still
-          # produces an installer instead of failing on signing. Windows signs
-          # explicitly via win.azureSignOptions in package.json (Azure Artifact
-          # Signing), which ignores this flag.
-          CSC_IDENTITY_AUTO_DISCOVERY: 'false'
+          # macOS signing turns itself on the moment MAC_CSC_LINK exists. Until
+          # then auto-discovery stays off so the build produces an (unsigned)
+          # installer instead of failing. Windows signs explicitly via
+          # win.azureSignOptions in package.json (Azure Artifact Signing),
+          # which ignores this flag.
+          CSC_IDENTITY_AUTO_DISCOVERY: ${{ matrix.os == 'macos-latest' && secrets.MAC_CSC_LINK != '' }}
+          # Scoped to macOS on purpose: a bare CSC_LINK would make Windows try
+          # to sign with the Apple cert instead of using Azure.
+          CSC_LINK: ${{ matrix.os == 'macos-latest' && secrets.MAC_CSC_LINK || '' }}
+          CSC_KEY_PASSWORD: ${{ matrix.os == 'macos-latest' && secrets.MAC_CSC_KEY_PASSWORD || '' }}
+          # Notarization credentials (macOS only, read by @electron/notarize).
+          APPLE_ID: ${{ secrets.APPLE_ID }}
+          APPLE_APP_SPECIFIC_PASSWORD: ${{ secrets.APPLE_APP_SPECIFIC_PASSWORD }}
+          APPLE_TEAM_ID: ${{ secrets.APPLE_TEAM_ID }}
           # Azure Artifact Signing auth (Windows only; unused on mac/linux).
           # DefaultAzureCredential picks these up automatically.
           AZURE_TENANT_ID: ${{ secrets.AZURE_TENANT_ID }}
