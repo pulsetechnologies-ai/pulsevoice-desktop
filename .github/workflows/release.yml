@@ -31,6 +31,24 @@ jobs:
         with:
           node-version: '20'
       - run: npm install
+
+      # Notarization accepts either an App Store Connect API key or an Apple ID
+      # + app-specific password. The API key is preferred for CI (not tied to a
+      # personal login or 2FA), so stage it when present; @electron/notarize
+      # picks it over the Apple ID path automatically. APPLE_API_KEY must be a
+      # FILE PATH, not the key contents, hence writing it to disk here.
+      - name: Stage App Store Connect API key (macOS, optional)
+        shell: bash
+        run: |
+          if [ -n "$APPLE_API_KEY_B64" ]; then
+            mkdir -p "$HOME/private_keys"
+            printf '%s' "$APPLE_API_KEY_B64" | base64 -d > "$HOME/private_keys/AuthKey.p8"
+            echo "APPLE_API_KEY=$HOME/private_keys/AuthKey.p8" >> "$GITHUB_ENV"
+            echo "Staged App Store Connect API key for notarization."
+          fi
+        env:
+          APPLE_API_KEY_B64: ${{ matrix.os == 'macos-latest' && secrets.APPLE_API_KEY_B64 || '' }}
+
       - name: Build & publish installer
         # Only tags and manual dispatches publish; PRs build to prove the config.
         # Notarization is opt-in on the presence of a signing cert, so unsigned
@@ -49,6 +67,12 @@ jobs:
           CSC_LINK: ${{ matrix.os == 'macos-latest' && secrets.MAC_CSC_LINK || '' }}
           CSC_KEY_PASSWORD: ${{ matrix.os == 'macos-latest' && secrets.MAC_CSC_KEY_PASSWORD || '' }}
           # Notarization credentials (macOS only, read by @electron/notarize).
+          # Path A — App Store Connect API key. APPLE_API_KEY itself is exported
+          # by the staging step above via GITHUB_ENV, not set here.
+          APPLE_API_KEY_ID: ${{ secrets.APPLE_API_KEY_ID }}
+          APPLE_API_ISSUER: ${{ secrets.APPLE_API_ISSUER }}
+          # Path B — Apple ID + app-specific password. Used only if no API key
+          # was staged.
           APPLE_ID: ${{ secrets.APPLE_ID }}
           APPLE_APP_SPECIFIC_PASSWORD: ${{ secrets.APPLE_APP_SPECIFIC_PASSWORD }}
           APPLE_TEAM_ID: ${{ secrets.APPLE_TEAM_ID }}
