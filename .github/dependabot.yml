@@ -1,0 +1,40 @@
+# Dependabot: automated dependency vulnerability alerts and update PRs.
+# Supports PCI DSS 11.3.1 (identification/remediation of vulnerable components)
+# and 6.3.1/6.3.3 (vulnerability identification and patching).
+#
+# This repo had alerts enabled but NO config, so nothing ever opened a PR to fix
+# them — 14 open alerts (12 high, 2 moderate) had accumulated by 2026-09-11. All of
+# them (@xmldom/xmldom, extract-zip, fast-uri) are TRANSITIVE under electron-builder,
+# which is why a repo with only two direct devDependencies carries so many: they are
+# cleared by refreshing the lockfile, which the weekly npm run below does.
+version: 2
+updates:
+  - package-ecosystem: npm
+    directory: "/"
+    schedule:
+      interval: weekly
+    open-pull-requests-limit: 10
+    groups:
+      dependencies:
+        patterns:
+          - "*"
+        update-types:
+          - "minor"
+          - "patch"
+    # An Electron major is never a routine bump for a SHIPPED desktop app: it moves the
+    # bundled Chromium and Node, and this app's release path (electron-builder, the macOS
+    # arm64 + signing setup) has broken on exactly that kind of change before. CI here only
+    # runs release.yml, so a major would go green and surface as a broken build artefact.
+    # Do those by hand, with an actual installed build opened on both platforms.
+    #
+    # Minor/patch Electron still flows through the group above — that is where the security
+    # backports land, so this does not weaken the remediation this file exists for.
+    ignore:
+      - dependency-name: "electron"
+        update-types: ["version-update:semver-major"]
+      - dependency-name: "electron-builder"
+        update-types: ["version-update:semver-major"]
+  - package-ecosystem: github-actions
+    directory: "/"
+    schedule:
+      interval: weekly
