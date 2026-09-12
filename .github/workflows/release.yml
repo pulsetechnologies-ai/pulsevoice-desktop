@@ -56,15 +56,40 @@ jobs:
         env:
           APPLE_API_KEY_B64: ${{ matrix.os == 'macos-latest' && secrets.APPLE_API_KEY_B64 || '' }}
 
+      # Windows signing is NOT skipped on pull requests. electron-builder's
+      # pull-request guard (isPullRequest()) exists only in the macOS code-sign
+      # path -- the Windows packager decides purely on `win.azureSignOptions`
+      # being present, so a PR build goes straight into Azure Trusted Signing:
+      # a PSGallery `Install-Module TrustedSigning`, then `Invoke-TrustedSigning`
+      # authenticating with the AZURE_* env vars.
+      #
+      # Dependabot runs get NONE of those secrets (they read a separate,
+      # currently empty Dependabot secrets store), so the sign step authenticates
+      # with blanks and hangs. Two jobs sat in that state for 4+ hours before
+      # being cancelled, and every Dependabot PR here fails Windows while Linux
+      # and macOS pass.
+      #
+      # Dropping the key on PR builds makes the Windows packager take the
+      # signtool path instead, which no-ops without a certificate. Tag and
+      # dispatch builds are untouched and still sign for real.
+      - name: Drop Azure signing on PR builds (Windows)
+        if: github.event_name == 'pull_request' && matrix.os == 'windows-latest'
+        shell: bash
+        run: |
+          node -e "const fs=require('fs');const p=JSON.parse(fs.readFileSync('package.json','utf8'));delete p.build.win.azureSignOptions;fs.writeFileSync('package.json',JSON.stringify(p,null,2));"
+          echo "Removed build.win.azureSignOptions for this PR build."
+
       - name: Build & publish installer
         # Publishes only on a tag, or on a dispatch with dry_run unticked. PRs
         # and dry runs build to prove the config without touching a release.
         # Notarization is opt-in on the presence of a signing cert, so unsigned
         # builds keep working until the Developer ID cert is in place.
         #
-        # NOTE a dry run is the ONLY way to exercise signing before tagging:
-        # electron-builder force-skips code signing on pull_request builds, so a
-        # green PR proves nothing about the certificate.
+        # NOTE a dry run is the ONLY way to exercise signing before tagging, so a
+        # green PR proves nothing about either certificate. On macOS that is
+        # electron-builder's own doing (isPullRequest() short-circuits the mac
+        # code-sign path). On Windows there is no such guard, which is why the
+        # step above removes the Azure config explicitly.
         run: npx electron-builder --publish ${{ (github.event_name == 'pull_request' || inputs.dry_run) && 'never' || 'always' }} ${{ (matrix.os == 'macos-latest' && secrets.MAC_CSC_LINK != '') && '--config.mac.notarize=true' || '' }}
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
