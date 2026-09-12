@@ -15,7 +15,7 @@
   },
   "devDependencies": {
     "electron": "^39.8.10",
-    "electron-builder": "^26.15.7"
+    "electron-builder": "^26.16.1"
   },
   "build": {
     "appId": "ai.pulsevoice.desktop",
