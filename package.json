@@ -23,6 +23,7 @@
     "files": [
       "main.js",
       "preload.js",
+      "updater.js",
       "build/icon.png"
     ],
     "directories": {
@@ -57,6 +58,12 @@
           "arch": [
             "universal"
           ]
+        },
+        {
+          "target": "zip",
+          "arch": [
+            "universal"
+          ]
         }
       ],
       "category": "public.app-category.business",
@@ -75,5 +82,8 @@
       "category": "Network",
       "artifactName": "PulseVoice.${ext}"
     }
+  },
+  "dependencies": {
+    "electron-updater": "^6.8.9"
   }
 }

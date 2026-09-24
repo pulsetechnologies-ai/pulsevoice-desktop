@@ -3,6 +3,7 @@
 // lives in the system tray so the softphone stays registered for inbound calls
 // even when the window is closed (like Teams/Zoom). Content is the hosted app, so
 // it auto-updates with each deploy — no desktop rebuild needed for app changes.
+// The shell itself updates through updater.js (GitHub releases, electron-updater).
 
 // Chromium's HTTPS-SVCB DNS path can fail (-105 NAME_NOT_RESOLVED) for some hosts
 // while the OS resolver succeeds — seen on stun/turn.telnyx.com, which breaks WebRTC
@@ -15,6 +16,7 @@ process.argv.push('--disable-features=UseDnsHttpsSvcb,UseDnsHttpsSvcbAlpn');
 
 const { app, BrowserWindow, Tray, Menu, shell, nativeImage, ipcMain, powerSaveBlocker } = require('electron');
 const path = require('node:path');
+const { setupAutoUpdate } = require('./updater');
 
 const APP_URL = process.env.PULSEVOICE_APP_URL || 'https://app.pulsevoice.pulsetechnologies.ai';
 const ICON = path.join(__dirname, 'build', 'icon.png');
@@ -22,6 +24,7 @@ const ICON = path.join(__dirname, 'build', 'icon.png');
 let win = null;
 let tray = null;
 let quitting = false;
+let updater = null;
 
 // While a call is up, stop the display sleeping. Reported live: when the screen
 // slept mid-call the other party stopped hearing the user, and waking it brought
@@ -37,6 +40,7 @@ function setCallActive(active) {
   } else if (!active && callBlocker !== null) {
     if (powerSaveBlocker.isStarted(callBlocker)) powerSaveBlocker.stop(callBlocker);
     callBlocker = null;
+    updater?.onCallEnded();
   }
 }
 ipcMain.on('pv:call-active', (event, active) => {
@@ -101,6 +105,13 @@ function createWindow() {
   });
 
   createTray();
+
+  updater = setupAutoUpdate({
+    isCallActive: () => callBlocker !== null,
+    getWindow: () => win,
+    onStateChange: refreshTrayMenu,
+    beforeInstall: () => { quitting = true; },
+  });
 }
 
 function showWindow() {
@@ -113,14 +124,21 @@ function createTray() {
   const trayIcon = nativeImage.createFromPath(ICON).resize({ width: 18, height: 18 });
   tray = new Tray(trayIcon);
   tray.setToolTip('PulseVoice');
+  refreshTrayMenu();
+  tray.on('click', showWindow);
+}
+
+function refreshTrayMenu() {
+  if (!tray) return;
+  const ready = updater?.state.readyVersion;
   tray.setContextMenu(
     Menu.buildFromTemplate([
       { label: 'Open PulseVoice', click: showWindow },
+      ...(ready ? [{ label: `Restart to update (${ready})`, click: () => updater.installNow() }] : []),
       { type: 'separator' },
       { label: 'Quit', click: () => { quitting = true; app.quit(); } },
     ]),
   );
-  tray.on('click', showWindow);
 }
 
 app.on('before-quit', () => { quitting = true; });
