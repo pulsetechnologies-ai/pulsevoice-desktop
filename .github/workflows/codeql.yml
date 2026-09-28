@@ -1,0 +1,88 @@
+# Static code analysis (SAST) with GitHub CodeQL, default query suite, JavaScript/TypeScript.
+# Complements the Trivy "Security Scan" workflow: Trivy looks at dependencies, config and
+# secrets; CodeQL reads this repository's own code for injection, XSS, path traversal, SSRF,
+# prototype pollution and similar flaws. Supports PCI DSS 6.2.3/6.2.4 (code review for
+# common vulnerabilities) and 11.3.1 alongside Trivy.
+#
+# Runs on every push to main, every PR, and weekly. Not a required check.
+#
+# Results go to the repository's Security -> Code scanning tab, which on a private repository
+# needs GitHub Code Security enabled (Settings -> Code security). Until it is, the upload is
+# refused (403), so that step is continue-on-error: the analysis still runs, the findings are
+# listed in the job summary, and the SARIF is kept as a workflow artifact for 30 days.
+name: CodeQL
+on:
+  push:
+    branches: [main]
+  pull_request:
+  schedule:
+    - cron: "0 7 * * 1"
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  analyze:
+    name: CodeQL (${{ matrix.language }})
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+      actions: read
+      security-events: write
+    strategy:
+      fail-fast: false
+      matrix:
+        language: [javascript-typescript]
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v7
+
+      # build-mode none: JavaScript/TypeScript is analysed from source; no install or build.
+      - name: Initialize CodeQL
+        uses: github/codeql-action/init@v4
+        with:
+          languages: ${{ matrix.language }}
+          build-mode: none
+
+      - name: Analyze
+        uses: github/codeql-action/analyze@v4
+        with:
+          category: /language:${{ matrix.language }}
+          upload: never
+          output: codeql-results
+
+      - name: Upload to code scanning
+        continue-on-error: true
+        uses: github/codeql-action/upload-sarif@v4
+        with:
+          sarif_file: codeql-results
+          category: /language:${{ matrix.language }}
+
+      - name: Summarize findings
+        if: always()
+        run: |
+          node -e '
+            const fs = require("fs");
+            const dir = "codeql-results";
+            const rows = [];
+            for (const f of fs.existsSync(dir) ? fs.readdirSync(dir) : []) {
+              const sarif = JSON.parse(fs.readFileSync(`${dir}/${f}`, "utf8"));
+              for (const run of sarif.runs || []) {
+                for (const r of run.results || []) {
+                  const loc = r.locations?.[0]?.physicalLocation;
+                  rows.push(`| ${r.level || "warning"} | ${r.ruleId} | ${loc?.artifactLocation?.uri}:${loc?.region?.startLine ?? ""} |`);
+                }
+              }
+            }
+            const out = [`### CodeQL: ${rows.length} finding(s)`, ""];
+            if (rows.length) out.push("| Level | Rule | Location |", "|---|---|---|", ...rows);
+            fs.appendFileSync(process.env.GITHUB_STEP_SUMMARY, out.join("\n") + "\n");
+          '
+
+      - name: Keep SARIF as an artifact
+        if: always()
+        uses: actions/upload-artifact@v7
+        with:
+          name: codeql-sarif-${{ matrix.language }}
+          path: codeql-results
+          retention-days: 30
+          if-no-files-found: ignore
