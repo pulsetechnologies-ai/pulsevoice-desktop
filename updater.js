@@ -22,6 +22,7 @@
 const { app, dialog, powerMonitor } = require('electron');
 const fs = require('node:fs');
 const path = require('node:path');
+const i18n = require('./i18n');
 
 const FIRST_CHECK_MS = 15_000;
 const CHECK_EVERY_MS = 4 * 60 * 60 * 1000;
@@ -76,12 +77,12 @@ function setupAutoUpdate({ isCallActive, getWindow, onStateChange, beforeInstall
     try {
       const { response } = await dialog.showMessageBox(win, {
         type: 'info',
-        buttons: ['Restart now', 'Later'],
+        buttons: [i18n.t('update.restartNow'), i18n.t('update.later')],
         defaultId: 0,
         cancelId: 1,
-        title: 'PulseVoice update',
-        message: `PulseVoice ${state.readyVersion} is ready to install.`,
-        detail: 'PulseVoice will close for a few seconds and reopen. If you choose Later, it installs the next time PulseVoice restarts.',
+        title: i18n.t('update.title'),
+        message: i18n.t('update.message', { version: state.readyVersion }),
+        detail: i18n.t('update.detail'),
       });
       if (response === 0) installNow();
     } finally {

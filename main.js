@@ -17,6 +17,7 @@ process.argv.push('--disable-features=UseDnsHttpsSvcb,UseDnsHttpsSvcbAlpn');
 const { app, BrowserWindow, Tray, Menu, shell, nativeImage, ipcMain, powerSaveBlocker } = require('electron');
 const path = require('node:path');
 const { setupAutoUpdate } = require('./updater');
+const i18n = require('./i18n');
 
 const APP_URL = process.env.PULSEVOICE_APP_URL || 'https://app.pulsevoice.pulsetechnologies.ai';
 const ICON = path.join(__dirname, 'build', 'icon.png');
@@ -104,6 +105,10 @@ function createWindow() {
     }
   });
 
+  // Follow the language chosen in the app (its pulse_lang cookie) for the tray menu and update dialog.
+  i18n.start(win.webContents.session);
+  i18n.onChange(refreshTrayMenu);
+
   createTray();
 
   updater = setupAutoUpdate({
@@ -133,10 +138,10 @@ function refreshTrayMenu() {
   const ready = updater?.state.readyVersion;
   tray.setContextMenu(
     Menu.buildFromTemplate([
-      { label: 'Open PulseVoice', click: showWindow },
-      ...(ready ? [{ label: `Restart to update (${ready})`, click: () => updater.installNow() }] : []),
+      { label: i18n.t('tray.open'), click: showWindow },
+      ...(ready ? [{ label: i18n.t('tray.restart', { version: ready }), click: () => updater.installNow() }] : []),
       { type: 'separator' },
-      { label: 'Quit', click: () => { quitting = true; app.quit(); } },
+      { label: i18n.t('tray.quit'), click: () => { quitting = true; app.quit(); } },
     ]),
   );
 }
