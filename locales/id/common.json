@@ -1,0 +1,14 @@
+{
+  "tray": {
+    "open": "Buka PulseVoice",
+    "restart": "Mulai ulang untuk memperbarui ({{version}})",
+    "quit": "Keluar"
+  },
+  "update": {
+    "restartNow": "Mulai ulang sekarang",
+    "later": "Nanti",
+    "title": "Pembaruan PulseVoice",
+    "message": "PulseVoice {{version}} siap dipasang.",
+    "detail": "PulseVoice akan menutup selama beberapa detik lalu terbuka kembali. Jika Anda memilih Nanti, pembaruan akan dipasang saat PulseVoice dimulai ulang berikutnya."
+  }
+}

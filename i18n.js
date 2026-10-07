@@ -10,6 +10,23 @@ const { createMessages } = require('@pulsetechnologies/i18n');
 // Static requires so the packager sees every catalog. Add a line when a language's catalog lands.
 const catalogs = {
   en: require('./locales/en/common.json'),
+  es: require('./locales/es/common.json'),
+  'zh-Hans': require('./locales/zh-Hans/common.json'),
+  'zh-Hant': require('./locales/zh-Hant/common.json'),
+  hi: require('./locales/hi/common.json'),
+  ar: require('./locales/ar/common.json'),
+  fr: require('./locales/fr/common.json'),
+  'pt-BR': require('./locales/pt-BR/common.json'),
+  ru: require('./locales/ru/common.json'),
+  bn: require('./locales/bn/common.json'),
+  ja: require('./locales/ja/common.json'),
+  de: require('./locales/de/common.json'),
+  id: require('./locales/id/common.json'),
+  ur: require('./locales/ur/common.json'),
+  vi: require('./locales/vi/common.json'),
+  ko: require('./locales/ko/common.json'),
+  fil: require('./locales/fil/common.json'),
+  ht: require('./locales/ht/common.json'),
 };
 const messages = createMessages(catalogs);
 

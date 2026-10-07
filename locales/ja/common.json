@@ -1,0 +1,14 @@
+{
+  "tray": {
+    "open": "PulseVoiceを開く",
+    "restart": "再起動して更新 ({{version}})",
+    "quit": "終了"
+  },
+  "update": {
+    "restartNow": "今すぐ再起動",
+    "later": "後で",
+    "title": "PulseVoiceのアップデート",
+    "message": "PulseVoice {{version}} をインストールする準備ができました。",
+    "detail": "PulseVoiceは数秒間終了した後、再起動します。「後で」を選択した場合は、次回PulseVoiceを再起動するときにインストールされます。"
+  }
+}

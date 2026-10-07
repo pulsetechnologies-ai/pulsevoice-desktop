@@ -1,0 +1,447 @@
+{
+  "version": 1,
+  "locales": {
+    "ar": {
+      "common:tray.open": {
+        "src": "f137a8ca2bc9a7d3"
+      },
+      "common:tray.quit": {
+        "src": "b3eb37acb66ba4bb"
+      },
+      "common:tray.restart": {
+        "src": "47782e3b525b81e0"
+      },
+      "common:update.detail": {
+        "src": "8e014d007a33ff8f"
+      },
+      "common:update.later": {
+        "src": "73b6e48a1b552d11"
+      },
+      "common:update.message": {
+        "src": "5269260d00085e05"
+      },
+      "common:update.restartNow": {
+        "src": "09af1002abafb2da"
+      },
+      "common:update.title": {
+        "src": "14700a47ccd2c035"
+      }
+    },
+    "bn": {
+      "common:tray.open": {
+        "src": "f137a8ca2bc9a7d3"
+      },
+      "common:tray.quit": {
+        "src": "b3eb37acb66ba4bb"
+      },
+      "common:tray.restart": {
+        "src": "47782e3b525b81e0"
+      },
+      "common:update.detail": {
+        "src": "8e014d007a33ff8f"
+      },
+      "common:update.later": {
+        "src": "73b6e48a1b552d11"
+      },
+      "common:update.message": {
+        "src": "5269260d00085e05"
+      },
+      "common:update.restartNow": {
+        "src": "09af1002abafb2da"
+      },
+      "common:update.title": {
+        "src": "14700a47ccd2c035"
+      }
+    },
+    "de": {
+      "common:tray.open": {
+        "src": "f137a8ca2bc9a7d3"
+      },
+      "common:tray.quit": {
+        "src": "b3eb37acb66ba4bb"
+      },
+      "common:tray.restart": {
+        "src": "47782e3b525b81e0"
+      },
+      "common:update.detail": {
+        "src": "8e014d007a33ff8f"
+      },
+      "common:update.later": {
+        "src": "73b6e48a1b552d11"
+      },
+      "common:update.message": {
+        "src": "5269260d00085e05"
+      },
+      "common:update.restartNow": {
+        "src": "09af1002abafb2da"
+      },
+      "common:update.title": {
+        "src": "14700a47ccd2c035"
+      }
+    },
+    "es": {
+      "common:tray.open": {
+        "src": "f137a8ca2bc9a7d3"
+      },
+      "common:tray.quit": {
+        "src": "b3eb37acb66ba4bb"
+      },
+      "common:tray.restart": {
+        "src": "47782e3b525b81e0"
+      },
+      "common:update.detail": {
+        "src": "8e014d007a33ff8f"
+      },
+      "common:update.later": {
+        "src": "73b6e48a1b552d11"
+      },
+      "common:update.message": {
+        "src": "5269260d00085e05"
+      },
+      "common:update.restartNow": {
+        "src": "09af1002abafb2da"
+      },
+      "common:update.title": {
+        "src": "14700a47ccd2c035"
+      }
+    },
+    "fil": {
+      "common:tray.open": {
+        "src": "f137a8ca2bc9a7d3"
+      },
+      "common:tray.quit": {
+        "src": "b3eb37acb66ba4bb"
+      },
+      "common:tray.restart": {
+        "src": "47782e3b525b81e0"
+      },
+      "common:update.detail": {
+        "src": "8e014d007a33ff8f"
+      },
+      "common:update.later": {
+        "src": "73b6e48a1b552d11"
+      },
+      "common:update.message": {
+        "src": "5269260d00085e05"
+      },
+      "common:update.restartNow": {
+        "src": "09af1002abafb2da"
+      },
+      "common:update.title": {
+        "src": "14700a47ccd2c035"
+      }
+    },
+    "fr": {
+      "common:tray.open": {
+        "src": "f137a8ca2bc9a7d3"
+      },
+      "common:tray.quit": {
+        "src": "b3eb37acb66ba4bb"
+      },
+      "common:tray.restart": {
+        "src": "47782e3b525b81e0"
+      },
+      "common:update.detail": {
+        "src": "8e014d007a33ff8f"
+      },
+      "common:update.later": {
+        "src": "73b6e48a1b552d11"
+      },
+      "common:update.message": {
+        "src": "5269260d00085e05"
+      },
+      "common:update.restartNow": {
+        "src": "09af1002abafb2da"
+      },
+      "common:update.title": {
+        "src": "14700a47ccd2c035"
+      }
+    },
+    "hi": {
+      "common:tray.open": {
+        "src": "f137a8ca2bc9a7d3"
+      },
+      "common:tray.quit": {
+        "src": "b3eb37acb66ba4bb"
+      },
+      "common:tray.restart": {
+        "src": "47782e3b525b81e0"
+      },
+      "common:update.detail": {
+        "src": "8e014d007a33ff8f"
+      },
+      "common:update.later": {
+        "src": "73b6e48a1b552d11"
+      },
+      "common:update.message": {
+        "src": "5269260d00085e05"
+      },
+      "common:update.restartNow": {
+        "src": "09af1002abafb2da"
+      },
+      "common:update.title": {
+        "src": "14700a47ccd2c035"
+      }
+    },
+    "ht": {
+      "common:tray.open": {
+        "src": "f137a8ca2bc9a7d3"
+      },
+      "common:tray.quit": {
+        "src": "b3eb37acb66ba4bb"
+      },
+      "common:tray.restart": {
+        "src": "47782e3b525b81e0"
+      },
+      "common:update.detail": {
+        "src": "8e014d007a33ff8f"
+      },
+      "common:update.later": {
+        "src": "73b6e48a1b552d11"
+      },
+      "common:update.message": {
+        "src": "5269260d00085e05"
+      },
+      "common:update.restartNow": {
+        "src": "09af1002abafb2da"
+      },
+      "common:update.title": {
+        "src": "14700a47ccd2c035"
+      }
+    },
+    "id": {
+      "common:tray.open": {
+        "src": "f137a8ca2bc9a7d3"
+      },
+      "common:tray.quit": {
+        "src": "b3eb37acb66ba4bb"
+      },
+      "common:tray.restart": {
+        "src": "47782e3b525b81e0"
+      },
+      "common:update.detail": {
+        "src": "8e014d007a33ff8f"
+      },
+      "common:update.later": {
+        "src": "73b6e48a1b552d11"
+      },
+      "common:update.message": {
+        "src": "5269260d00085e05"
+      },
+      "common:update.restartNow": {
+        "src": "09af1002abafb2da"
+      },
+      "common:update.title": {
+        "src": "14700a47ccd2c035"
+      }
+    },
+    "ja": {
+      "common:tray.open": {
+        "src": "f137a8ca2bc9a7d3"
+      },
+      "common:tray.quit": {
+        "src": "b3eb37acb66ba4bb"
+      },
+      "common:tray.restart": {
+        "src": "47782e3b525b81e0"
+      },
+      "common:update.detail": {
+        "src": "8e014d007a33ff8f"
+      },
+      "common:update.later": {
+        "src": "73b6e48a1b552d11"
+      },
+      "common:update.message": {
+        "src": "5269260d00085e05"
+      },
+      "common:update.restartNow": {
+        "src": "09af1002abafb2da"
+      },
+      "common:update.title": {
+        "src": "14700a47ccd2c035"
+      }
+    },
+    "ko": {
+      "common:tray.open": {
+        "src": "f137a8ca2bc9a7d3"
+      },
+      "common:tray.quit": {
+        "src": "b3eb37acb66ba4bb"
+      },
+      "common:tray.restart": {
+        "src": "47782e3b525b81e0"
+      },
+      "common:update.detail": {
+        "src": "8e014d007a33ff8f"
+      },
+      "common:update.later": {
+        "src": "73b6e48a1b552d11"
+      },
+      "common:update.message": {
+        "src": "5269260d00085e05"
+      },
+      "common:update.restartNow": {
+        "src": "09af1002abafb2da"
+      },
+      "common:update.title": {
+        "src": "14700a47ccd2c035"
+      }
+    },
+    "pt-BR": {
+      "common:tray.open": {
+        "src": "f137a8ca2bc9a7d3"
+      },
+      "common:tray.quit": {
+        "src": "b3eb37acb66ba4bb"
+      },
+      "common:tray.restart": {
+        "src": "47782e3b525b81e0"
+      },
+      "common:update.detail": {
+        "src": "8e014d007a33ff8f"
+      },
+      "common:update.later": {
+        "src": "73b6e48a1b552d11"
+      },
+      "common:update.message": {
+        "src": "5269260d00085e05"
+      },
+      "common:update.restartNow": {
+        "src": "09af1002abafb2da"
+      },
+      "common:update.title": {
+        "src": "14700a47ccd2c035"
+      }
+    },
+    "ru": {
+      "common:tray.open": {
+        "src": "f137a8ca2bc9a7d3"
+      },
+      "common:tray.quit": {
+        "src": "b3eb37acb66ba4bb"
+      },
+      "common:tray.restart": {
+        "src": "47782e3b525b81e0"
+      },
+      "common:update.detail": {
+        "src": "8e014d007a33ff8f"
+      },
+      "common:update.later": {
+        "src": "73b6e48a1b552d11"
+      },
+      "common:update.message": {
+        "src": "5269260d00085e05"
+      },
+      "common:update.restartNow": {
+        "src": "09af1002abafb2da"
+      },
+      "common:update.title": {
+        "src": "14700a47ccd2c035"
+      }
+    },
+    "ur": {
+      "common:tray.open": {
+        "src": "f137a8ca2bc9a7d3"
+      },
+      "common:tray.quit": {
+        "src": "b3eb37acb66ba4bb"
+      },
+      "common:tray.restart": {
+        "src": "47782e3b525b81e0"
+      },
+      "common:update.detail": {
+        "src": "8e014d007a33ff8f"
+      },
+      "common:update.later": {
+        "src": "73b6e48a1b552d11"
+      },
+      "common:update.message": {
+        "src": "5269260d00085e05"
+      },
+      "common:update.restartNow": {
+        "src": "09af1002abafb2da"
+      },
+      "common:update.title": {
+        "src": "14700a47ccd2c035"
+      }
+    },
+    "vi": {
+      "common:tray.open": {
+        "src": "f137a8ca2bc9a7d3"
+      },
+      "common:tray.quit": {
+        "src": "b3eb37acb66ba4bb"
+      },
+      "common:tray.restart": {
+        "src": "47782e3b525b81e0"
+      },
+      "common:update.detail": {
+        "src": "8e014d007a33ff8f"
+      },
+      "common:update.later": {
+        "src": "73b6e48a1b552d11"
+      },
+      "common:update.message": {
+        "src": "5269260d00085e05"
+      },
+      "common:update.restartNow": {
+        "src": "09af1002abafb2da"
+      },
+      "common:update.title": {
+        "src": "14700a47ccd2c035"
+      }
+    },
+    "zh-Hans": {
+      "common:tray.open": {
+        "src": "f137a8ca2bc9a7d3"
+      },
+      "common:tray.quit": {
+        "src": "b3eb37acb66ba4bb"
+      },
+      "common:tray.restart": {
+        "src": "47782e3b525b81e0"
+      },
+      "common:update.detail": {
+        "src": "8e014d007a33ff8f"
+      },
+      "common:update.later": {
+        "src": "73b6e48a1b552d11"
+      },
+      "common:update.message": {
+        "src": "5269260d00085e05"
+      },
+      "common:update.restartNow": {
+        "src": "09af1002abafb2da"
+      },
+      "common:update.title": {
+        "src": "14700a47ccd2c035"
+      }
+    },
+    "zh-Hant": {
+      "common:tray.open": {
+        "src": "f137a8ca2bc9a7d3"
+      },
+      "common:tray.quit": {
+        "src": "b3eb37acb66ba4bb"
+      },
+      "common:tray.restart": {
+        "src": "47782e3b525b81e0"
+      },
+      "common:update.detail": {
+        "src": "8e014d007a33ff8f"
+      },
+      "common:update.later": {
+        "src": "73b6e48a1b552d11"
+      },
+      "common:update.message": {
+        "src": "5269260d00085e05"
+      },
+      "common:update.restartNow": {
+        "src": "09af1002abafb2da"
+      },
+      "common:update.title": {
+        "src": "14700a47ccd2c035"
+      }
+    }
+  }
+}

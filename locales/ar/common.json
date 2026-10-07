@@ -1,0 +1,14 @@
+{
+  "tray": {
+    "open": "فتح PulseVoice",
+    "restart": "إعادة التشغيل للتحديث ({{version}})",
+    "quit": "إنهاء"
+  },
+  "update": {
+    "restartNow": "إعادة التشغيل الآن",
+    "later": "لاحقًا",
+    "title": "تحديث PulseVoice",
+    "message": "الإصدار {{version}} من PulseVoice جاهز للتثبيت.",
+    "detail": "سيُغلق PulseVoice لبضع ثوانٍ ثم يُعاد فتحه. إذا اخترتم «لاحقًا»، فسيتم التثبيت عند إعادة تشغيل PulseVoice في المرة القادمة."
+  }
+}

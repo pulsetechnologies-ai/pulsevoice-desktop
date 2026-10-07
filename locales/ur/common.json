@@ -1,0 +1,14 @@
+{
+  "tray": {
+    "open": "PulseVoice کھولیں",
+    "restart": "اپ ڈیٹ کے لیے ری اسٹارٹ کریں ({{version}})",
+    "quit": "بند کریں"
+  },
+  "update": {
+    "restartNow": "ابھی ری اسٹارٹ کریں",
+    "later": "بعد میں",
+    "title": "PulseVoice اپ ڈیٹ",
+    "message": "PulseVoice {{version}} انسٹال کے لیے تیار ہے۔",
+    "detail": "PulseVoice چند سیکنڈ کے لیے بند ہو کر دوبارہ کھلے گا۔ اگر آپ \"بعد میں\" کا انتخاب کرتے ہیں تو یہ PulseVoice کے اگلی بار ری اسٹارٹ ہونے پر انسٹال ہو جائے گا۔"
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "tray": {
+    "open": "Mở PulseVoice",
+    "restart": "Khởi động lại để cập nhật ({{version}})",
+    "quit": "Thoát"
+  },
+  "update": {
+    "restartNow": "Khởi động lại ngay",
+    "later": "Để sau",
+    "title": "Cập nhật PulseVoice",
+    "message": "PulseVoice {{version}} đã sẵn sàng để cài đặt.",
+    "detail": "PulseVoice sẽ đóng trong vài giây rồi mở lại. Nếu bạn chọn Để sau, bản cập nhật sẽ được cài đặt vào lần PulseVoice khởi động lại tiếp theo."
+  }
+}

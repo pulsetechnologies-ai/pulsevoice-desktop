@@ -1,0 +1,14 @@
+{
+  "tray": {
+    "open": "開啟 PulseVoice",
+    "restart": "重新啟動以更新 ({{version}})",
+    "quit": "結束"
+  },
+  "update": {
+    "restartNow": "立即重新啟動",
+    "later": "稍後",
+    "title": "PulseVoice 更新",
+    "message": "PulseVoice {{version}} 已可安裝。",
+    "detail": "PulseVoice 將關閉數秒後重新開啟。若您選擇「稍後」,將於下次 PulseVoice 重新啟動時安裝。"
+  }
+}
