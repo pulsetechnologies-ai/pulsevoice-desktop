@@ -1,0 +1,89 @@
+# Translate the app catalogs with pulse-i18n (PulseWork ENG-19; same workflow as the other Pulse repos), then commit them to the
+# branch it was run on. Run it from the Actions tab on a feature branch ("Run workflow" → pick the
+# branch), never on main: the output is reviewed in that branch's pull request like any other change.
+#
+# The Anthropic key is the organization's ANTHROPIC_API_KEY secret. It is only ever read here, by the
+# translate step; it never reaches a workstation.
+#
+# A push made with GITHUB_TOKEN does not start CI, so after this finishes, push any commit to the
+# branch (or re-run CI on the PR) to get checks on the translated head.
+name: Translate
+on:
+  workflow_dispatch:
+    inputs:
+      app:
+        description: Directory holding pulse-i18n.config.json (the app keeps it at the repo root)
+        default: .
+        required: true
+      locales:
+        description: "Only these languages, comma-separated (blank = every language the config lists)"
+        default: ""
+        required: false
+permissions:
+  contents: write
+concurrency:
+  group: translate-${{ github.ref }}
+  cancel-in-progress: false
+jobs:
+  translate:
+    runs-on: ubuntu-latest
+    timeout-minutes: 60
+    steps:
+      - name: Refuse main, and check the inputs
+        env:
+          REF: ${{ github.ref_name }}
+          APP: ${{ inputs.app }}
+          LOCALES: ${{ inputs.locales }}
+          HAS_KEY: ${{ secrets.ANTHROPIC_API_KEY != '' }}
+        run: |
+          if [ "$REF" = "main" ] || [ "$REF" = "master" ]; then echo "::error::Run this on a feature branch, not $REF."; exit 1; fi
+          echo "$APP" | grep -Eq '^([.]|(apps|packages)/[a-z0-9-]+)$' || { echo "::error::app must be . or look like apps/<name> or packages/<name>"; exit 1; }
+          echo "$LOCALES" | grep -Eq '^[A-Za-z,-]*$' || { echo "::error::locales must be codes like es,zh-Hant"; exit 1; }
+          [ "$HAS_KEY" = "true" ] || { echo "::error::The ANTHROPIC_API_KEY repository secret is not set."; exit 1; }
+
+      - uses: actions/checkout@v7
+
+      - uses: actions/setup-node@v7
+        with:
+          node-version: "22"
+          cache: npm
+
+      - run: npm ci
+
+      # Several languages at once (pulse-i18n 0.3+). If some strings still fail after the retry, the step
+      # fails but the run goes on: every language that finished is committed, so a rerun only has to
+      # redo what's missing, and the last step fails the run so nobody mistakes it for complete.
+      - name: Translate
+        id: translate
+        continue-on-error: true
+        working-directory: ${{ inputs.app }}
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+          LOCALES: ${{ inputs.locales }}
+        run: |
+          if [ -n "$LOCALES" ]; then npx pulse-i18n translate --parallel 4 --locale "$LOCALES"; else npx pulse-i18n translate --parallel 4; fi
+
+      - name: Check
+        id: check
+        continue-on-error: true
+        working-directory: ${{ inputs.app }}
+        run: npx pulse-i18n check
+
+      - name: Commit the catalogs to this branch
+        if: always()
+        env:
+          APP: ${{ inputs.app }}
+          REF: ${{ github.ref_name }}
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898283+github-actions[bot]@users.noreply.github.com"
+          git add -- "$APP"
+          if git diff --cached --quiet; then echo "Nothing new to translate."; exit 0; fi
+          git commit -m "Translate $APP (pulse-i18n)"
+          git push origin "HEAD:$REF"
+
+      - name: Fail if anything is still untranslated
+        if: steps.translate.outcome == 'failure' || steps.check.outcome == 'failure'
+        run: |
+          echo "::error::Some strings were not translated (see the Translate and Check steps). What finished is committed; run this workflow again to finish."
+          exit 1
