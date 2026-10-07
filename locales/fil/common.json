@@ -1,0 +1,14 @@
+{
+  "tray": {
+    "open": "Buksan ang PulseVoice",
+    "restart": "I-restart para mag-update ({{version}})",
+    "quit": "Umalis"
+  },
+  "update": {
+    "restartNow": "I-restart ngayon",
+    "later": "Mamaya na",
+    "title": "Update sa PulseVoice",
+    "message": "Handa nang i-install ang PulseVoice {{version}}.",
+    "detail": "Magsasara ang PulseVoice nang ilang segundo at magbubukas muli. Kung pipiliin ninyo ang Mamaya na, mai-install ito sa susunod na pag-restart ng PulseVoice."
+  }
+}

@@ -15,7 +15,8 @@
   },
   "devDependencies": {
     "electron": "^44.5.1",
-    "electron-builder": "^26.17.0"
+    "electron-builder": "^26.17.0",
+    "@anthropic-ai/sdk": "^0.131.0"
   },
   "build": {
     "appId": "ai.pulsevoice.desktop",
@@ -24,6 +25,8 @@
       "main.js",
       "preload.js",
       "updater.js",
+      "i18n.js",
+      "locales/*/common.json",
       "build/icon.png"
     ],
     "directories": {
@@ -84,6 +87,7 @@
     }
   },
   "dependencies": {
+    "@pulsetechnologies/i18n": "0.8.1",
     "electron-updater": "^6.8.9"
   }
 }

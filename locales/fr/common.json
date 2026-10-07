@@ -1,0 +1,14 @@
+{
+  "tray": {
+    "open": "Ouvrir PulseVoice",
+    "restart": "Redémarrer pour mettre à jour ({{version}})",
+    "quit": "Quitter"
+  },
+  "update": {
+    "restartNow": "Redémarrer maintenant",
+    "later": "Plus tard",
+    "title": "Mise à jour de PulseVoice",
+    "message": "PulseVoice {{version}} est prêt à être installé.",
+    "detail": "PulseVoice va se fermer quelques secondes, puis se rouvrir. Si vous choisissez Plus tard, la mise à jour s'installera au prochain redémarrage de PulseVoice."
+  }
+}

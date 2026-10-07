@@ -1,0 +1,14 @@
+{
+  "tray": {
+    "open": "Louvri PulseVoice",
+    "restart": "Redémarre pou mete ajou ({{version}})",
+    "quit": "Soti"
+  },
+  "update": {
+    "restartNow": "Redémarre kounye a",
+    "later": "Pita",
+    "title": "Mizajou PulseVoice",
+    "message": "PulseVoice {{version}} pare pou enstale.",
+    "detail": "PulseVoice pral fèmen pou kèk segonn epi li pral louvri ankò. Si ou chwazi Pita, l ap enstale pwochen fwa PulseVoice redémarre."
+  }
+}
