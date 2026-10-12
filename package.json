@@ -14,7 +14,7 @@
     "dist:linux": "electron-builder --linux"
   },
   "devDependencies": {
-    "electron": "^44.5.1",
+    "electron": "^44.6.0",
     "electron-builder": "^26.17.0",
     "@anthropic-ai/sdk": "^0.131.0"
   },
