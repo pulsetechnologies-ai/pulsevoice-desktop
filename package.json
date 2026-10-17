@@ -14,9 +14,9 @@
     "dist:linux": "electron-builder --linux"
   },
   "devDependencies": {
-    "electron": "^44.6.0",
+    "electron": "^44.7.2",
     "electron-builder": "^26.17.0",
-    "@anthropic-ai/sdk": "^0.131.0"
+    "@anthropic-ai/sdk": "^0.133.0"
   },
   "build": {
     "appId": "ai.pulsevoice.desktop",
