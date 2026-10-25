@@ -1,5 +1,9 @@
 {
   "dir": "locales",
-  "glossary": ["Pulse", "PulseVoice", "Pulse Technologies"],
-  "context": "The PulseVoice desktop app for Windows, macOS and Linux (a business softphone that stays in the system tray so inbound calls keep arriving). These are the few words of the app's own shell: the tray menu and the dialog that offers to restart to install an update. Short, plain, polite. The program inserts {{placeholders}} (a version number) and they must be kept exactly as written, character for character; never translate what is inside {{ }}. 'Pulse' and 'PulseVoice' are product names and are never translated. Use the formal form of address where the language has one."
+  "glossary": [
+    "Pulse",
+    "PulseVoice",
+    "Pulse Technologies"
+  ],
+  "context": "The PulseVoice desktop app for Windows, macOS and Linux (a business softphone that stays in the system tray so inbound calls keep arriving). These are the few words of the app's own shell: the tray menu, the dialog that offers to restart to install an update, the one-time question about opening phone-number links, a right-click menu entry, and a small floating call window with Answer / Decline / Hang up / Mute buttons. Short, plain, polite. The program inserts {{placeholders}} (a version number or a phone number) and they must be kept exactly as written, character for character; never translate what is inside {{ }}. 'Pulse' and 'PulseVoice' are product names and are never translated. Use the formal form of address where the language has one."
 }

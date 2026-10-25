@@ -2,7 +2,15 @@
   "tray": {
     "open": "Open PulseVoice",
     "restart": "Restart to update ({{version}})",
-    "quit": "Quit"
+    "quit": "Quit",
+    "mute": "Mute",
+    "unmute": "Unmute",
+    "hangup": "Hang up",
+    "dialClipboard": "Dial number from clipboard",
+    "startAtLogin": "Start at login",
+    "hotkeys": "Global hotkeys",
+    "phoneLinks": "Open phone links (tel:, sip:)",
+    "miniWindow": "Mini call window"
   },
   "update": {
     "restartNow": "Restart now",
@@ -10,5 +18,29 @@
     "title": "PulseVoice update",
     "message": "PulseVoice {{version}} is ready to install.",
     "detail": "PulseVoice will close for a few seconds and reopen. If you choose Later, it installs the next time PulseVoice restarts."
+  },
+  "phoneLinks": {
+    "title": "Phone links",
+    "message": "Use PulseVoice for phone links?",
+    "detail": "When you click a phone number link (tel: or sip:) in a browser or another app, PulseVoice opens with the number in the dialer. It never calls by itself. You can change this later from the tray menu or in Settings.",
+    "yes": "Use PulseVoice",
+    "no": "No thanks"
+  },
+  "context": {
+    "call": "Call {{number}} with PulseVoice"
+  },
+  "clipboard": {
+    "title": "Nothing to dial",
+    "body": "The clipboard doesn't contain a phone number."
+  },
+  "mini": {
+    "incoming": "Incoming call",
+    "calling": "Calling…",
+    "onHold": "On hold",
+    "answer": "Answer",
+    "decline": "Decline",
+    "hangUp": "Hang up",
+    "mute": "Mute",
+    "unmute": "Unmute"
   }
 }
