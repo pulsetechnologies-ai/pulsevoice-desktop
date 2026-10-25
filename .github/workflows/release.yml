@@ -38,6 +38,7 @@ jobs:
         with:
           node-version: '22'
       - run: npm install
+      - run: npm test
 
       # Notarization accepts either an App Store Connect API key or an Apple ID
       # + app-specific password. The API key is preferred for CI (not tied to a

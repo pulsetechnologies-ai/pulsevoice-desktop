@@ -11,7 +11,8 @@
     "dist": "electron-builder",
     "dist:win": "electron-builder --win",
     "dist:mac": "electron-builder --mac",
-    "dist:linux": "electron-builder --linux"
+    "dist:linux": "electron-builder --linux",
+    "test": "node --test \"test/*.test.js\""
   },
   "devDependencies": {
     "electron": "^44.6.0",
@@ -26,6 +27,14 @@
       "preload.js",
       "updater.js",
       "i18n.js",
+      "config.js",
+      "phone.js",
+      "hotkeys.js",
+      "settings-store.js",
+      "mini-window.js",
+      "mini-preload.js",
+      "mini.html",
+      "mini.js",
       "locales/*/common.json",
       "build/icon.png"
     ],
@@ -84,7 +93,16 @@
       "target": "AppImage",
       "category": "Network",
       "artifactName": "PulseVoice.${ext}"
-    }
+    },
+    "protocols": [
+      {
+        "name": "Phone links",
+        "schemes": [
+          "tel",
+          "sip"
+        ]
+      }
+    ]
   },
   "dependencies": {
     "@pulsetechnologies/i18n": "0.8.1",
