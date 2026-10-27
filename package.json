@@ -35,6 +35,11 @@
       "mini-preload.js",
       "mini.html",
       "mini.js",
+      "share-picker.js",
+      "share-sources.js",
+      "share-picker-preload.js",
+      "share-picker.html",
+      "share-picker-page.js",
       "locales/*/common.json",
       "build/icon.png"
     ],

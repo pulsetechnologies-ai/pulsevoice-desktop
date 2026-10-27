@@ -12,6 +12,15 @@
     "phoneLinks": "Open phone links (tel:, sip:)",
     "miniWindow": "Mini call window"
   },
+  "share": {
+    "title": "Choose what to share",
+    "screens": "Screens",
+    "windows": "Windows",
+    "none": "Nothing to share here.",
+    "audio": "Also share computer sound",
+    "share": "Share",
+    "cancel": "Cancel"
+  },
   "update": {
     "restartNow": "Restart now",
     "later": "Later",
