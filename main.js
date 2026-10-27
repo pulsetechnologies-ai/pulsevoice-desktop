@@ -15,7 +15,7 @@
 process.argv.push('--disable-features=UseDnsHttpsSvcb,UseDnsHttpsSvcbAlpn');
 
 const {
-  app, BrowserWindow, Tray, Menu, shell, nativeImage, ipcMain, powerSaveBlocker, globalShortcut, clipboard, dialog, Notification,
+  app, BrowserWindow, Tray, Menu, shell, nativeImage, ipcMain, powerSaveBlocker, globalShortcut, clipboard, dialog, Notification, desktopCapturer,
 } = require('electron');
 const path = require('node:path');
 const { setupAutoUpdate } = require('./updater');
@@ -27,6 +27,8 @@ const { parsePhoneLink, findPhoneLinkInArgv, sanitizePhoneText } = require('./ph
 const { createHotkeys } = require('./hotkeys');
 const { createSettingsStore } = require('./settings-store');
 const { createMiniWindow } = require('./mini-window');
+const { createSharePicker } = require('./share-picker');
+const { audioOffered } = require('./share-sources');
 
 const APP_URL = process.env.PULSEVOICE_APP_URL || 'https://app.pulsevoice.pulsetechnologies.ai';
 const ICON = path.join(__dirname, 'build', 'icon.png');
@@ -266,6 +268,13 @@ if (!app.requestSingleInstanceLock()) {
   app.whenReady().then(createWindow);
 }
 
+function shareStrings() {
+  return {
+    title: i18n.t('share.title'), screens: i18n.t('share.screens'), windows: i18n.t('share.windows'), none: i18n.t('share.none'),
+    audio: i18n.t('share.audio'), share: i18n.t('share.share'), cancel: i18n.t('share.cancel'),
+  };
+}
+
 function createWindow() {
   store = createSettingsStore(app.getPath('userData'));
   settings = store.load();
@@ -293,9 +302,26 @@ function createWindow() {
   // the screen wake lock, which the web app takes during a call (it was being
   // refused here) and which only keeps the display on, and speaker selection,
   // which the app's Settings → Audio devices speaker picker relies on.
+  // 'display-capture' is allowed here only so getDisplayMedia can reach the handler below, which makes the person pick
+  // exactly what is shared; nothing is captured without that choice.
   win.webContents.session.setPermissionRequestHandler((_wc, permission, callback) => {
-    callback(['media', 'audioCapture', 'screen-wake-lock', 'speaker-selection'].includes(permission));
+    callback(['media', 'audioCapture', 'screen-wake-lock', 'speaker-selection', 'display-capture'].includes(permission));
   });
+
+  // Screen share (getDisplayMedia): Electron has no picker of its own on Windows/Linux, so show ours. Only the app's own
+  // pages may ask; cancelling answers null, which the web app sees as a refusal and treats as "never mind".
+  const sharePicker = createSharePicker({ icon: ICON, strings: shareStrings, getParent: () => (win && !win.isDestroyed() ? win : null) });
+  win.webContents.session.setDisplayMediaRequestHandler((request, callback) => {
+    if (!request.frame || !isTrustedOrigin(request.frame.url, APP_URL)) { callback(null); return; }
+    desktopCapturer.getSources({ types: ['screen', 'window'], thumbnailSize: { width: 320, height: 200 }, fetchWindowIcons: true })
+      .then((sources) => sharePicker.pick(sources, { audioOffered: audioOffered(request, process.platform) })
+        .then((choice) => {
+          const source = choice && sources.find((s) => s.id === choice.id);
+          if (!source) { callback(null); return; }
+          callback(choice.audio ? { video: source, audio: 'loopback' } : { video: source });
+        }))
+      .catch(() => callback(null));
+  }, { useSystemPicker: false });
 
   // A reload or a crashed renderer can't send "call ended" — never leave the
   // display pinned on after one.
