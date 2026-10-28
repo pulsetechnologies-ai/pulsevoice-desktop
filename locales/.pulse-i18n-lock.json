@@ -2,14 +2,107 @@
   "version": 1,
   "locales": {
     "ar": {
+      "common:clipboard.body": {
+        "src": "d57c263a544baa9c"
+      },
+      "common:clipboard.title": {
+        "src": "5c1ee15b25768fd6"
+      },
+      "common:context.call": {
+        "src": "d42c9fb85b676d1b"
+      },
+      "common:mini.answer": {
+        "src": "b2a3aa602762a782"
+      },
+      "common:mini.calling": {
+        "src": "326db06c51f75866"
+      },
+      "common:mini.decline": {
+        "src": "a2d285b352873457"
+      },
+      "common:mini.hangUp": {
+        "src": "07d2a79b7d6ac88c"
+      },
+      "common:mini.incoming": {
+        "src": "a31650d8480673f5"
+      },
+      "common:mini.mute": {
+        "src": "8dd6857baf026850"
+      },
+      "common:mini.onHold": {
+        "src": "ebe7db36e4959b9b"
+      },
+      "common:mini.unmute": {
+        "src": "ce4ee4efc5e324fc"
+      },
+      "common:phoneLinks.detail": {
+        "src": "f26b173b00f75b09"
+      },
+      "common:phoneLinks.message": {
+        "src": "232821e280617acd"
+      },
+      "common:phoneLinks.no": {
+        "src": "49780701dc2d7cc6"
+      },
+      "common:phoneLinks.title": {
+        "src": "eda24e39821d51cb"
+      },
+      "common:phoneLinks.yes": {
+        "src": "d2569bfdb83f2e0c"
+      },
+      "common:share.audio": {
+        "src": "3799307187729dee"
+      },
+      "common:share.cancel": {
+        "src": "19766ed6ccb2f4a3"
+      },
+      "common:share.none": {
+        "src": "32ca2fc6cecf3991"
+      },
+      "common:share.screens": {
+        "src": "4727a1a2b79c0c21"
+      },
+      "common:share.share": {
+        "src": "29887a5ff9846ccc"
+      },
+      "common:share.title": {
+        "src": "3607f96ef8882a09"
+      },
+      "common:share.windows": {
+        "src": "d598026a9cbc6050"
+      },
+      "common:tray.dialClipboard": {
+        "src": "73414479825a85d1"
+      },
+      "common:tray.hangup": {
+        "src": "07d2a79b7d6ac88c"
+      },
+      "common:tray.hotkeys": {
+        "src": "66a96da6b60937be"
+      },
+      "common:tray.miniWindow": {
+        "src": "bb5a92886a4154a4"
+      },
+      "common:tray.mute": {
+        "src": "8dd6857baf026850"
+      },
       "common:tray.open": {
         "src": "f137a8ca2bc9a7d3"
+      },
+      "common:tray.phoneLinks": {
+        "src": "74928c537ff48215"
       },
       "common:tray.quit": {
         "src": "b3eb37acb66ba4bb"
       },
       "common:tray.restart": {
         "src": "47782e3b525b81e0"
+      },
+      "common:tray.startAtLogin": {
+        "src": "85010ecd9a169aa0"
+      },
+      "common:tray.unmute": {
+        "src": "ce4ee4efc5e324fc"
       },
       "common:update.detail": {
         "src": "8e014d007a33ff8f"
@@ -28,14 +121,107 @@
       }
     },
     "bn": {
+      "common:clipboard.body": {
+        "src": "d57c263a544baa9c"
+      },
+      "common:clipboard.title": {
+        "src": "5c1ee15b25768fd6"
+      },
+      "common:context.call": {
+        "src": "d42c9fb85b676d1b"
+      },
+      "common:mini.answer": {
+        "src": "b2a3aa602762a782"
+      },
+      "common:mini.calling": {
+        "src": "326db06c51f75866"
+      },
+      "common:mini.decline": {
+        "src": "a2d285b352873457"
+      },
+      "common:mini.hangUp": {
+        "src": "07d2a79b7d6ac88c"
+      },
+      "common:mini.incoming": {
+        "src": "a31650d8480673f5"
+      },
+      "common:mini.mute": {
+        "src": "8dd6857baf026850"
+      },
+      "common:mini.onHold": {
+        "src": "ebe7db36e4959b9b"
+      },
+      "common:mini.unmute": {
+        "src": "ce4ee4efc5e324fc"
+      },
+      "common:phoneLinks.detail": {
+        "src": "f26b173b00f75b09"
+      },
+      "common:phoneLinks.message": {
+        "src": "232821e280617acd"
+      },
+      "common:phoneLinks.no": {
+        "src": "49780701dc2d7cc6"
+      },
+      "common:phoneLinks.title": {
+        "src": "eda24e39821d51cb"
+      },
+      "common:phoneLinks.yes": {
+        "src": "d2569bfdb83f2e0c"
+      },
+      "common:share.audio": {
+        "src": "3799307187729dee"
+      },
+      "common:share.cancel": {
+        "src": "19766ed6ccb2f4a3"
+      },
+      "common:share.none": {
+        "src": "32ca2fc6cecf3991"
+      },
+      "common:share.screens": {
+        "src": "4727a1a2b79c0c21"
+      },
+      "common:share.share": {
+        "src": "29887a5ff9846ccc"
+      },
+      "common:share.title": {
+        "src": "3607f96ef8882a09"
+      },
+      "common:share.windows": {
+        "src": "d598026a9cbc6050"
+      },
+      "common:tray.dialClipboard": {
+        "src": "73414479825a85d1"
+      },
+      "common:tray.hangup": {
+        "src": "07d2a79b7d6ac88c"
+      },
+      "common:tray.hotkeys": {
+        "src": "66a96da6b60937be"
+      },
+      "common:tray.miniWindow": {
+        "src": "bb5a92886a4154a4"
+      },
+      "common:tray.mute": {
+        "src": "8dd6857baf026850"
+      },
       "common:tray.open": {
         "src": "f137a8ca2bc9a7d3"
+      },
+      "common:tray.phoneLinks": {
+        "src": "74928c537ff48215"
       },
       "common:tray.quit": {
         "src": "b3eb37acb66ba4bb"
       },
       "common:tray.restart": {
         "src": "47782e3b525b81e0"
+      },
+      "common:tray.startAtLogin": {
+        "src": "85010ecd9a169aa0"
+      },
+      "common:tray.unmute": {
+        "src": "ce4ee4efc5e324fc"
       },
       "common:update.detail": {
         "src": "8e014d007a33ff8f"
@@ -54,14 +240,107 @@
       }
     },
     "de": {
+      "common:clipboard.body": {
+        "src": "d57c263a544baa9c"
+      },
+      "common:clipboard.title": {
+        "src": "5c1ee15b25768fd6"
+      },
+      "common:context.call": {
+        "src": "d42c9fb85b676d1b"
+      },
+      "common:mini.answer": {
+        "src": "b2a3aa602762a782"
+      },
+      "common:mini.calling": {
+        "src": "326db06c51f75866"
+      },
+      "common:mini.decline": {
+        "src": "a2d285b352873457"
+      },
+      "common:mini.hangUp": {
+        "src": "07d2a79b7d6ac88c"
+      },
+      "common:mini.incoming": {
+        "src": "a31650d8480673f5"
+      },
+      "common:mini.mute": {
+        "src": "8dd6857baf026850"
+      },
+      "common:mini.onHold": {
+        "src": "ebe7db36e4959b9b"
+      },
+      "common:mini.unmute": {
+        "src": "ce4ee4efc5e324fc"
+      },
+      "common:phoneLinks.detail": {
+        "src": "f26b173b00f75b09"
+      },
+      "common:phoneLinks.message": {
+        "src": "232821e280617acd"
+      },
+      "common:phoneLinks.no": {
+        "src": "49780701dc2d7cc6"
+      },
+      "common:phoneLinks.title": {
+        "src": "eda24e39821d51cb"
+      },
+      "common:phoneLinks.yes": {
+        "src": "d2569bfdb83f2e0c"
+      },
+      "common:share.audio": {
+        "src": "3799307187729dee"
+      },
+      "common:share.cancel": {
+        "src": "19766ed6ccb2f4a3"
+      },
+      "common:share.none": {
+        "src": "32ca2fc6cecf3991"
+      },
+      "common:share.screens": {
+        "src": "4727a1a2b79c0c21"
+      },
+      "common:share.share": {
+        "src": "29887a5ff9846ccc"
+      },
+      "common:share.title": {
+        "src": "3607f96ef8882a09"
+      },
+      "common:share.windows": {
+        "src": "d598026a9cbc6050"
+      },
+      "common:tray.dialClipboard": {
+        "src": "73414479825a85d1"
+      },
+      "common:tray.hangup": {
+        "src": "07d2a79b7d6ac88c"
+      },
+      "common:tray.hotkeys": {
+        "src": "66a96da6b60937be"
+      },
+      "common:tray.miniWindow": {
+        "src": "bb5a92886a4154a4"
+      },
+      "common:tray.mute": {
+        "src": "8dd6857baf026850"
+      },
       "common:tray.open": {
         "src": "f137a8ca2bc9a7d3"
+      },
+      "common:tray.phoneLinks": {
+        "src": "74928c537ff48215"
       },
       "common:tray.quit": {
         "src": "b3eb37acb66ba4bb"
       },
       "common:tray.restart": {
         "src": "47782e3b525b81e0"
+      },
+      "common:tray.startAtLogin": {
+        "src": "85010ecd9a169aa0"
+      },
+      "common:tray.unmute": {
+        "src": "ce4ee4efc5e324fc"
       },
       "common:update.detail": {
         "src": "8e014d007a33ff8f"
@@ -80,14 +359,107 @@
       }
     },
     "es": {
+      "common:clipboard.body": {
+        "src": "d57c263a544baa9c"
+      },
+      "common:clipboard.title": {
+        "src": "5c1ee15b25768fd6"
+      },
+      "common:context.call": {
+        "src": "d42c9fb85b676d1b"
+      },
+      "common:mini.answer": {
+        "src": "b2a3aa602762a782"
+      },
+      "common:mini.calling": {
+        "src": "326db06c51f75866"
+      },
+      "common:mini.decline": {
+        "src": "a2d285b352873457"
+      },
+      "common:mini.hangUp": {
+        "src": "07d2a79b7d6ac88c"
+      },
+      "common:mini.incoming": {
+        "src": "a31650d8480673f5"
+      },
+      "common:mini.mute": {
+        "src": "8dd6857baf026850"
+      },
+      "common:mini.onHold": {
+        "src": "ebe7db36e4959b9b"
+      },
+      "common:mini.unmute": {
+        "src": "ce4ee4efc5e324fc"
+      },
+      "common:phoneLinks.detail": {
+        "src": "f26b173b00f75b09"
+      },
+      "common:phoneLinks.message": {
+        "src": "232821e280617acd"
+      },
+      "common:phoneLinks.no": {
+        "src": "49780701dc2d7cc6"
+      },
+      "common:phoneLinks.title": {
+        "src": "eda24e39821d51cb"
+      },
+      "common:phoneLinks.yes": {
+        "src": "d2569bfdb83f2e0c"
+      },
+      "common:share.audio": {
+        "src": "3799307187729dee"
+      },
+      "common:share.cancel": {
+        "src": "19766ed6ccb2f4a3"
+      },
+      "common:share.none": {
+        "src": "32ca2fc6cecf3991"
+      },
+      "common:share.screens": {
+        "src": "4727a1a2b79c0c21"
+      },
+      "common:share.share": {
+        "src": "29887a5ff9846ccc"
+      },
+      "common:share.title": {
+        "src": "3607f96ef8882a09"
+      },
+      "common:share.windows": {
+        "src": "d598026a9cbc6050"
+      },
+      "common:tray.dialClipboard": {
+        "src": "73414479825a85d1"
+      },
+      "common:tray.hangup": {
+        "src": "07d2a79b7d6ac88c"
+      },
+      "common:tray.hotkeys": {
+        "src": "66a96da6b60937be"
+      },
+      "common:tray.miniWindow": {
+        "src": "bb5a92886a4154a4"
+      },
+      "common:tray.mute": {
+        "src": "8dd6857baf026850"
+      },
       "common:tray.open": {
         "src": "f137a8ca2bc9a7d3"
+      },
+      "common:tray.phoneLinks": {
+        "src": "74928c537ff48215"
       },
       "common:tray.quit": {
         "src": "b3eb37acb66ba4bb"
       },
       "common:tray.restart": {
         "src": "47782e3b525b81e0"
+      },
+      "common:tray.startAtLogin": {
+        "src": "85010ecd9a169aa0"
+      },
+      "common:tray.unmute": {
+        "src": "ce4ee4efc5e324fc"
       },
       "common:update.detail": {
         "src": "8e014d007a33ff8f"
@@ -106,14 +478,107 @@
       }
     },
     "fil": {
+      "common:clipboard.body": {
+        "src": "d57c263a544baa9c"
+      },
+      "common:clipboard.title": {
+        "src": "5c1ee15b25768fd6"
+      },
+      "common:context.call": {
+        "src": "d42c9fb85b676d1b"
+      },
+      "common:mini.answer": {
+        "src": "b2a3aa602762a782"
+      },
+      "common:mini.calling": {
+        "src": "326db06c51f75866"
+      },
+      "common:mini.decline": {
+        "src": "a2d285b352873457"
+      },
+      "common:mini.hangUp": {
+        "src": "07d2a79b7d6ac88c"
+      },
+      "common:mini.incoming": {
+        "src": "a31650d8480673f5"
+      },
+      "common:mini.mute": {
+        "src": "8dd6857baf026850"
+      },
+      "common:mini.onHold": {
+        "src": "ebe7db36e4959b9b"
+      },
+      "common:mini.unmute": {
+        "src": "ce4ee4efc5e324fc"
+      },
+      "common:phoneLinks.detail": {
+        "src": "f26b173b00f75b09"
+      },
+      "common:phoneLinks.message": {
+        "src": "232821e280617acd"
+      },
+      "common:phoneLinks.no": {
+        "src": "49780701dc2d7cc6"
+      },
+      "common:phoneLinks.title": {
+        "src": "eda24e39821d51cb"
+      },
+      "common:phoneLinks.yes": {
+        "src": "d2569bfdb83f2e0c"
+      },
+      "common:share.audio": {
+        "src": "3799307187729dee"
+      },
+      "common:share.cancel": {
+        "src": "19766ed6ccb2f4a3"
+      },
+      "common:share.none": {
+        "src": "32ca2fc6cecf3991"
+      },
+      "common:share.screens": {
+        "src": "4727a1a2b79c0c21"
+      },
+      "common:share.share": {
+        "src": "29887a5ff9846ccc"
+      },
+      "common:share.title": {
+        "src": "3607f96ef8882a09"
+      },
+      "common:share.windows": {
+        "src": "d598026a9cbc6050"
+      },
+      "common:tray.dialClipboard": {
+        "src": "73414479825a85d1"
+      },
+      "common:tray.hangup": {
+        "src": "07d2a79b7d6ac88c"
+      },
+      "common:tray.hotkeys": {
+        "src": "66a96da6b60937be"
+      },
+      "common:tray.miniWindow": {
+        "src": "bb5a92886a4154a4"
+      },
+      "common:tray.mute": {
+        "src": "8dd6857baf026850"
+      },
       "common:tray.open": {
         "src": "f137a8ca2bc9a7d3"
+      },
+      "common:tray.phoneLinks": {
+        "src": "74928c537ff48215"
       },
       "common:tray.quit": {
         "src": "b3eb37acb66ba4bb"
       },
       "common:tray.restart": {
         "src": "47782e3b525b81e0"
+      },
+      "common:tray.startAtLogin": {
+        "src": "85010ecd9a169aa0"
+      },
+      "common:tray.unmute": {
+        "src": "ce4ee4efc5e324fc"
       },
       "common:update.detail": {
         "src": "8e014d007a33ff8f"
@@ -132,14 +597,107 @@
       }
     },
     "fr": {
+      "common:clipboard.body": {
+        "src": "d57c263a544baa9c"
+      },
+      "common:clipboard.title": {
+        "src": "5c1ee15b25768fd6"
+      },
+      "common:context.call": {
+        "src": "d42c9fb85b676d1b"
+      },
+      "common:mini.answer": {
+        "src": "b2a3aa602762a782"
+      },
+      "common:mini.calling": {
+        "src": "326db06c51f75866"
+      },
+      "common:mini.decline": {
+        "src": "a2d285b352873457"
+      },
+      "common:mini.hangUp": {
+        "src": "07d2a79b7d6ac88c"
+      },
+      "common:mini.incoming": {
+        "src": "a31650d8480673f5"
+      },
+      "common:mini.mute": {
+        "src": "8dd6857baf026850"
+      },
+      "common:mini.onHold": {
+        "src": "ebe7db36e4959b9b"
+      },
+      "common:mini.unmute": {
+        "src": "ce4ee4efc5e324fc"
+      },
+      "common:phoneLinks.detail": {
+        "src": "f26b173b00f75b09"
+      },
+      "common:phoneLinks.message": {
+        "src": "232821e280617acd"
+      },
+      "common:phoneLinks.no": {
+        "src": "49780701dc2d7cc6"
+      },
+      "common:phoneLinks.title": {
+        "src": "eda24e39821d51cb"
+      },
+      "common:phoneLinks.yes": {
+        "src": "d2569bfdb83f2e0c"
+      },
+      "common:share.audio": {
+        "src": "3799307187729dee"
+      },
+      "common:share.cancel": {
+        "src": "19766ed6ccb2f4a3"
+      },
+      "common:share.none": {
+        "src": "32ca2fc6cecf3991"
+      },
+      "common:share.screens": {
+        "src": "4727a1a2b79c0c21"
+      },
+      "common:share.share": {
+        "src": "29887a5ff9846ccc"
+      },
+      "common:share.title": {
+        "src": "3607f96ef8882a09"
+      },
+      "common:share.windows": {
+        "src": "d598026a9cbc6050"
+      },
+      "common:tray.dialClipboard": {
+        "src": "73414479825a85d1"
+      },
+      "common:tray.hangup": {
+        "src": "07d2a79b7d6ac88c"
+      },
+      "common:tray.hotkeys": {
+        "src": "66a96da6b60937be"
+      },
+      "common:tray.miniWindow": {
+        "src": "bb5a92886a4154a4"
+      },
+      "common:tray.mute": {
+        "src": "8dd6857baf026850"
+      },
       "common:tray.open": {
         "src": "f137a8ca2bc9a7d3"
+      },
+      "common:tray.phoneLinks": {
+        "src": "74928c537ff48215"
       },
       "common:tray.quit": {
         "src": "b3eb37acb66ba4bb"
       },
       "common:tray.restart": {
         "src": "47782e3b525b81e0"
+      },
+      "common:tray.startAtLogin": {
+        "src": "85010ecd9a169aa0"
+      },
+      "common:tray.unmute": {
+        "src": "ce4ee4efc5e324fc"
       },
       "common:update.detail": {
         "src": "8e014d007a33ff8f"
@@ -158,14 +716,107 @@
       }
     },
     "hi": {
+      "common:clipboard.body": {
+        "src": "d57c263a544baa9c"
+      },
+      "common:clipboard.title": {
+        "src": "5c1ee15b25768fd6"
+      },
+      "common:context.call": {
+        "src": "d42c9fb85b676d1b"
+      },
+      "common:mini.answer": {
+        "src": "b2a3aa602762a782"
+      },
+      "common:mini.calling": {
+        "src": "326db06c51f75866"
+      },
+      "common:mini.decline": {
+        "src": "a2d285b352873457"
+      },
+      "common:mini.hangUp": {
+        "src": "07d2a79b7d6ac88c"
+      },
+      "common:mini.incoming": {
+        "src": "a31650d8480673f5"
+      },
+      "common:mini.mute": {
+        "src": "8dd6857baf026850"
+      },
+      "common:mini.onHold": {
+        "src": "ebe7db36e4959b9b"
+      },
+      "common:mini.unmute": {
+        "src": "ce4ee4efc5e324fc"
+      },
+      "common:phoneLinks.detail": {
+        "src": "f26b173b00f75b09"
+      },
+      "common:phoneLinks.message": {
+        "src": "232821e280617acd"
+      },
+      "common:phoneLinks.no": {
+        "src": "49780701dc2d7cc6"
+      },
+      "common:phoneLinks.title": {
+        "src": "eda24e39821d51cb"
+      },
+      "common:phoneLinks.yes": {
+        "src": "d2569bfdb83f2e0c"
+      },
+      "common:share.audio": {
+        "src": "3799307187729dee"
+      },
+      "common:share.cancel": {
+        "src": "19766ed6ccb2f4a3"
+      },
+      "common:share.none": {
+        "src": "32ca2fc6cecf3991"
+      },
+      "common:share.screens": {
+        "src": "4727a1a2b79c0c21"
+      },
+      "common:share.share": {
+        "src": "29887a5ff9846ccc"
+      },
+      "common:share.title": {
+        "src": "3607f96ef8882a09"
+      },
+      "common:share.windows": {
+        "src": "d598026a9cbc6050"
+      },
+      "common:tray.dialClipboard": {
+        "src": "73414479825a85d1"
+      },
+      "common:tray.hangup": {
+        "src": "07d2a79b7d6ac88c"
+      },
+      "common:tray.hotkeys": {
+        "src": "66a96da6b60937be"
+      },
+      "common:tray.miniWindow": {
+        "src": "bb5a92886a4154a4"
+      },
+      "common:tray.mute": {
+        "src": "8dd6857baf026850"
+      },
       "common:tray.open": {
         "src": "f137a8ca2bc9a7d3"
+      },
+      "common:tray.phoneLinks": {
+        "src": "74928c537ff48215"
       },
       "common:tray.quit": {
         "src": "b3eb37acb66ba4bb"
       },
       "common:tray.restart": {
         "src": "47782e3b525b81e0"
+      },
+      "common:tray.startAtLogin": {
+        "src": "85010ecd9a169aa0"
+      },
+      "common:tray.unmute": {
+        "src": "ce4ee4efc5e324fc"
       },
       "common:update.detail": {
         "src": "8e014d007a33ff8f"
@@ -184,14 +835,107 @@
       }
     },
     "ht": {
+      "common:clipboard.body": {
+        "src": "d57c263a544baa9c"
+      },
+      "common:clipboard.title": {
+        "src": "5c1ee15b25768fd6"
+      },
+      "common:context.call": {
+        "src": "d42c9fb85b676d1b"
+      },
+      "common:mini.answer": {
+        "src": "b2a3aa602762a782"
+      },
+      "common:mini.calling": {
+        "src": "326db06c51f75866"
+      },
+      "common:mini.decline": {
+        "src": "a2d285b352873457"
+      },
+      "common:mini.hangUp": {
+        "src": "07d2a79b7d6ac88c"
+      },
+      "common:mini.incoming": {
+        "src": "a31650d8480673f5"
+      },
+      "common:mini.mute": {
+        "src": "8dd6857baf026850"
+      },
+      "common:mini.onHold": {
+        "src": "ebe7db36e4959b9b"
+      },
+      "common:mini.unmute": {
+        "src": "ce4ee4efc5e324fc"
+      },
+      "common:phoneLinks.detail": {
+        "src": "f26b173b00f75b09"
+      },
+      "common:phoneLinks.message": {
+        "src": "232821e280617acd"
+      },
+      "common:phoneLinks.no": {
+        "src": "49780701dc2d7cc6"
+      },
+      "common:phoneLinks.title": {
+        "src": "eda24e39821d51cb"
+      },
+      "common:phoneLinks.yes": {
+        "src": "d2569bfdb83f2e0c"
+      },
+      "common:share.audio": {
+        "src": "3799307187729dee"
+      },
+      "common:share.cancel": {
+        "src": "19766ed6ccb2f4a3"
+      },
+      "common:share.none": {
+        "src": "32ca2fc6cecf3991"
+      },
+      "common:share.screens": {
+        "src": "4727a1a2b79c0c21"
+      },
+      "common:share.share": {
+        "src": "29887a5ff9846ccc"
+      },
+      "common:share.title": {
+        "src": "3607f96ef8882a09"
+      },
+      "common:share.windows": {
+        "src": "d598026a9cbc6050"
+      },
+      "common:tray.dialClipboard": {
+        "src": "73414479825a85d1"
+      },
+      "common:tray.hangup": {
+        "src": "07d2a79b7d6ac88c"
+      },
+      "common:tray.hotkeys": {
+        "src": "66a96da6b60937be"
+      },
+      "common:tray.miniWindow": {
+        "src": "bb5a92886a4154a4"
+      },
+      "common:tray.mute": {
+        "src": "8dd6857baf026850"
+      },
       "common:tray.open": {
         "src": "f137a8ca2bc9a7d3"
+      },
+      "common:tray.phoneLinks": {
+        "src": "74928c537ff48215"
       },
       "common:tray.quit": {
         "src": "b3eb37acb66ba4bb"
       },
       "common:tray.restart": {
         "src": "47782e3b525b81e0"
+      },
+      "common:tray.startAtLogin": {
+        "src": "85010ecd9a169aa0"
+      },
+      "common:tray.unmute": {
+        "src": "ce4ee4efc5e324fc"
       },
       "common:update.detail": {
         "src": "8e014d007a33ff8f"
@@ -210,14 +954,107 @@
       }
     },
     "id": {
+      "common:clipboard.body": {
+        "src": "d57c263a544baa9c"
+      },
+      "common:clipboard.title": {
+        "src": "5c1ee15b25768fd6"
+      },
+      "common:context.call": {
+        "src": "d42c9fb85b676d1b"
+      },
+      "common:mini.answer": {
+        "src": "b2a3aa602762a782"
+      },
+      "common:mini.calling": {
+        "src": "326db06c51f75866"
+      },
+      "common:mini.decline": {
+        "src": "a2d285b352873457"
+      },
+      "common:mini.hangUp": {
+        "src": "07d2a79b7d6ac88c"
+      },
+      "common:mini.incoming": {
+        "src": "a31650d8480673f5"
+      },
+      "common:mini.mute": {
+        "src": "8dd6857baf026850"
+      },
+      "common:mini.onHold": {
+        "src": "ebe7db36e4959b9b"
+      },
+      "common:mini.unmute": {
+        "src": "ce4ee4efc5e324fc"
+      },
+      "common:phoneLinks.detail": {
+        "src": "f26b173b00f75b09"
+      },
+      "common:phoneLinks.message": {
+        "src": "232821e280617acd"
+      },
+      "common:phoneLinks.no": {
+        "src": "49780701dc2d7cc6"
+      },
+      "common:phoneLinks.title": {
+        "src": "eda24e39821d51cb"
+      },
+      "common:phoneLinks.yes": {
+        "src": "d2569bfdb83f2e0c"
+      },
+      "common:share.audio": {
+        "src": "3799307187729dee"
+      },
+      "common:share.cancel": {
+        "src": "19766ed6ccb2f4a3"
+      },
+      "common:share.none": {
+        "src": "32ca2fc6cecf3991"
+      },
+      "common:share.screens": {
+        "src": "4727a1a2b79c0c21"
+      },
+      "common:share.share": {
+        "src": "29887a5ff9846ccc"
+      },
+      "common:share.title": {
+        "src": "3607f96ef8882a09"
+      },
+      "common:share.windows": {
+        "src": "d598026a9cbc6050"
+      },
+      "common:tray.dialClipboard": {
+        "src": "73414479825a85d1"
+      },
+      "common:tray.hangup": {
+        "src": "07d2a79b7d6ac88c"
+      },
+      "common:tray.hotkeys": {
+        "src": "66a96da6b60937be"
+      },
+      "common:tray.miniWindow": {
+        "src": "bb5a92886a4154a4"
+      },
+      "common:tray.mute": {
+        "src": "8dd6857baf026850"
+      },
       "common:tray.open": {
         "src": "f137a8ca2bc9a7d3"
+      },
+      "common:tray.phoneLinks": {
+        "src": "74928c537ff48215"
       },
       "common:tray.quit": {
         "src": "b3eb37acb66ba4bb"
       },
       "common:tray.restart": {
         "src": "47782e3b525b81e0"
+      },
+      "common:tray.startAtLogin": {
+        "src": "85010ecd9a169aa0"
+      },
+      "common:tray.unmute": {
+        "src": "ce4ee4efc5e324fc"
       },
       "common:update.detail": {
         "src": "8e014d007a33ff8f"
@@ -236,14 +1073,107 @@
       }
     },
     "ja": {
+      "common:clipboard.body": {
+        "src": "d57c263a544baa9c"
+      },
+      "common:clipboard.title": {
+        "src": "5c1ee15b25768fd6"
+      },
+      "common:context.call": {
+        "src": "d42c9fb85b676d1b"
+      },
+      "common:mini.answer": {
+        "src": "b2a3aa602762a782"
+      },
+      "common:mini.calling": {
+        "src": "326db06c51f75866"
+      },
+      "common:mini.decline": {
+        "src": "a2d285b352873457"
+      },
+      "common:mini.hangUp": {
+        "src": "07d2a79b7d6ac88c"
+      },
+      "common:mini.incoming": {
+        "src": "a31650d8480673f5"
+      },
+      "common:mini.mute": {
+        "src": "8dd6857baf026850"
+      },
+      "common:mini.onHold": {
+        "src": "ebe7db36e4959b9b"
+      },
+      "common:mini.unmute": {
+        "src": "ce4ee4efc5e324fc"
+      },
+      "common:phoneLinks.detail": {
+        "src": "f26b173b00f75b09"
+      },
+      "common:phoneLinks.message": {
+        "src": "232821e280617acd"
+      },
+      "common:phoneLinks.no": {
+        "src": "49780701dc2d7cc6"
+      },
+      "common:phoneLinks.title": {
+        "src": "eda24e39821d51cb"
+      },
+      "common:phoneLinks.yes": {
+        "src": "d2569bfdb83f2e0c"
+      },
+      "common:share.audio": {
+        "src": "3799307187729dee"
+      },
+      "common:share.cancel": {
+        "src": "19766ed6ccb2f4a3"
+      },
+      "common:share.none": {
+        "src": "32ca2fc6cecf3991"
+      },
+      "common:share.screens": {
+        "src": "4727a1a2b79c0c21"
+      },
+      "common:share.share": {
+        "src": "29887a5ff9846ccc"
+      },
+      "common:share.title": {
+        "src": "3607f96ef8882a09"
+      },
+      "common:share.windows": {
+        "src": "d598026a9cbc6050"
+      },
+      "common:tray.dialClipboard": {
+        "src": "73414479825a85d1"
+      },
+      "common:tray.hangup": {
+        "src": "07d2a79b7d6ac88c"
+      },
+      "common:tray.hotkeys": {
+        "src": "66a96da6b60937be"
+      },
+      "common:tray.miniWindow": {
+        "src": "bb5a92886a4154a4"
+      },
+      "common:tray.mute": {
+        "src": "8dd6857baf026850"
+      },
       "common:tray.open": {
         "src": "f137a8ca2bc9a7d3"
+      },
+      "common:tray.phoneLinks": {
+        "src": "74928c537ff48215"
       },
       "common:tray.quit": {
         "src": "b3eb37acb66ba4bb"
       },
       "common:tray.restart": {
         "src": "47782e3b525b81e0"
+      },
+      "common:tray.startAtLogin": {
+        "src": "85010ecd9a169aa0"
+      },
+      "common:tray.unmute": {
+        "src": "ce4ee4efc5e324fc"
       },
       "common:update.detail": {
         "src": "8e014d007a33ff8f"
@@ -262,14 +1192,107 @@
       }
     },
     "ko": {
+      "common:clipboard.body": {
+        "src": "d57c263a544baa9c"
+      },
+      "common:clipboard.title": {
+        "src": "5c1ee15b25768fd6"
+      },
+      "common:context.call": {
+        "src": "d42c9fb85b676d1b"
+      },
+      "common:mini.answer": {
+        "src": "b2a3aa602762a782"
+      },
+      "common:mini.calling": {
+        "src": "326db06c51f75866"
+      },
+      "common:mini.decline": {
+        "src": "a2d285b352873457"
+      },
+      "common:mini.hangUp": {
+        "src": "07d2a79b7d6ac88c"
+      },
+      "common:mini.incoming": {
+        "src": "a31650d8480673f5"
+      },
+      "common:mini.mute": {
+        "src": "8dd6857baf026850"
+      },
+      "common:mini.onHold": {
+        "src": "ebe7db36e4959b9b"
+      },
+      "common:mini.unmute": {
+        "src": "ce4ee4efc5e324fc"
+      },
+      "common:phoneLinks.detail": {
+        "src": "f26b173b00f75b09"
+      },
+      "common:phoneLinks.message": {
+        "src": "232821e280617acd"
+      },
+      "common:phoneLinks.no": {
+        "src": "49780701dc2d7cc6"
+      },
+      "common:phoneLinks.title": {
+        "src": "eda24e39821d51cb"
+      },
+      "common:phoneLinks.yes": {
+        "src": "d2569bfdb83f2e0c"
+      },
+      "common:share.audio": {
+        "src": "3799307187729dee"
+      },
+      "common:share.cancel": {
+        "src": "19766ed6ccb2f4a3"
+      },
+      "common:share.none": {
+        "src": "32ca2fc6cecf3991"
+      },
+      "common:share.screens": {
+        "src": "4727a1a2b79c0c21"
+      },
+      "common:share.share": {
+        "src": "29887a5ff9846ccc"
+      },
+      "common:share.title": {
+        "src": "3607f96ef8882a09"
+      },
+      "common:share.windows": {
+        "src": "d598026a9cbc6050"
+      },
+      "common:tray.dialClipboard": {
+        "src": "73414479825a85d1"
+      },
+      "common:tray.hangup": {
+        "src": "07d2a79b7d6ac88c"
+      },
+      "common:tray.hotkeys": {
+        "src": "66a96da6b60937be"
+      },
+      "common:tray.miniWindow": {
+        "src": "bb5a92886a4154a4"
+      },
+      "common:tray.mute": {
+        "src": "8dd6857baf026850"
+      },
       "common:tray.open": {
         "src": "f137a8ca2bc9a7d3"
+      },
+      "common:tray.phoneLinks": {
+        "src": "74928c537ff48215"
       },
       "common:tray.quit": {
         "src": "b3eb37acb66ba4bb"
       },
       "common:tray.restart": {
         "src": "47782e3b525b81e0"
+      },
+      "common:tray.startAtLogin": {
+        "src": "85010ecd9a169aa0"
+      },
+      "common:tray.unmute": {
+        "src": "ce4ee4efc5e324fc"
       },
       "common:update.detail": {
         "src": "8e014d007a33ff8f"
@@ -288,14 +1311,107 @@
       }
     },
     "pt-BR": {
+      "common:clipboard.body": {
+        "src": "d57c263a544baa9c"
+      },
+      "common:clipboard.title": {
+        "src": "5c1ee15b25768fd6"
+      },
+      "common:context.call": {
+        "src": "d42c9fb85b676d1b"
+      },
+      "common:mini.answer": {
+        "src": "b2a3aa602762a782"
+      },
+      "common:mini.calling": {
+        "src": "326db06c51f75866"
+      },
+      "common:mini.decline": {
+        "src": "a2d285b352873457"
+      },
+      "common:mini.hangUp": {
+        "src": "07d2a79b7d6ac88c"
+      },
+      "common:mini.incoming": {
+        "src": "a31650d8480673f5"
+      },
+      "common:mini.mute": {
+        "src": "8dd6857baf026850"
+      },
+      "common:mini.onHold": {
+        "src": "ebe7db36e4959b9b"
+      },
+      "common:mini.unmute": {
+        "src": "ce4ee4efc5e324fc"
+      },
+      "common:phoneLinks.detail": {
+        "src": "f26b173b00f75b09"
+      },
+      "common:phoneLinks.message": {
+        "src": "232821e280617acd"
+      },
+      "common:phoneLinks.no": {
+        "src": "49780701dc2d7cc6"
+      },
+      "common:phoneLinks.title": {
+        "src": "eda24e39821d51cb"
+      },
+      "common:phoneLinks.yes": {
+        "src": "d2569bfdb83f2e0c"
+      },
+      "common:share.audio": {
+        "src": "3799307187729dee"
+      },
+      "common:share.cancel": {
+        "src": "19766ed6ccb2f4a3"
+      },
+      "common:share.none": {
+        "src": "32ca2fc6cecf3991"
+      },
+      "common:share.screens": {
+        "src": "4727a1a2b79c0c21"
+      },
+      "common:share.share": {
+        "src": "29887a5ff9846ccc"
+      },
+      "common:share.title": {
+        "src": "3607f96ef8882a09"
+      },
+      "common:share.windows": {
+        "src": "d598026a9cbc6050"
+      },
+      "common:tray.dialClipboard": {
+        "src": "73414479825a85d1"
+      },
+      "common:tray.hangup": {
+        "src": "07d2a79b7d6ac88c"
+      },
+      "common:tray.hotkeys": {
+        "src": "66a96da6b60937be"
+      },
+      "common:tray.miniWindow": {
+        "src": "bb5a92886a4154a4"
+      },
+      "common:tray.mute": {
+        "src": "8dd6857baf026850"
+      },
       "common:tray.open": {
         "src": "f137a8ca2bc9a7d3"
+      },
+      "common:tray.phoneLinks": {
+        "src": "74928c537ff48215"
       },
       "common:tray.quit": {
         "src": "b3eb37acb66ba4bb"
       },
       "common:tray.restart": {
         "src": "47782e3b525b81e0"
+      },
+      "common:tray.startAtLogin": {
+        "src": "85010ecd9a169aa0"
+      },
+      "common:tray.unmute": {
+        "src": "ce4ee4efc5e324fc"
       },
       "common:update.detail": {
         "src": "8e014d007a33ff8f"
@@ -314,14 +1430,107 @@
       }
     },
     "ru": {
+      "common:clipboard.body": {
+        "src": "d57c263a544baa9c"
+      },
+      "common:clipboard.title": {
+        "src": "5c1ee15b25768fd6"
+      },
+      "common:context.call": {
+        "src": "d42c9fb85b676d1b"
+      },
+      "common:mini.answer": {
+        "src": "b2a3aa602762a782"
+      },
+      "common:mini.calling": {
+        "src": "326db06c51f75866"
+      },
+      "common:mini.decline": {
+        "src": "a2d285b352873457"
+      },
+      "common:mini.hangUp": {
+        "src": "07d2a79b7d6ac88c"
+      },
+      "common:mini.incoming": {
+        "src": "a31650d8480673f5"
+      },
+      "common:mini.mute": {
+        "src": "8dd6857baf026850"
+      },
+      "common:mini.onHold": {
+        "src": "ebe7db36e4959b9b"
+      },
+      "common:mini.unmute": {
+        "src": "ce4ee4efc5e324fc"
+      },
+      "common:phoneLinks.detail": {
+        "src": "f26b173b00f75b09"
+      },
+      "common:phoneLinks.message": {
+        "src": "232821e280617acd"
+      },
+      "common:phoneLinks.no": {
+        "src": "49780701dc2d7cc6"
+      },
+      "common:phoneLinks.title": {
+        "src": "eda24e39821d51cb"
+      },
+      "common:phoneLinks.yes": {
+        "src": "d2569bfdb83f2e0c"
+      },
+      "common:share.audio": {
+        "src": "3799307187729dee"
+      },
+      "common:share.cancel": {
+        "src": "19766ed6ccb2f4a3"
+      },
+      "common:share.none": {
+        "src": "32ca2fc6cecf3991"
+      },
+      "common:share.screens": {
+        "src": "4727a1a2b79c0c21"
+      },
+      "common:share.share": {
+        "src": "29887a5ff9846ccc"
+      },
+      "common:share.title": {
+        "src": "3607f96ef8882a09"
+      },
+      "common:share.windows": {
+        "src": "d598026a9cbc6050"
+      },
+      "common:tray.dialClipboard": {
+        "src": "73414479825a85d1"
+      },
+      "common:tray.hangup": {
+        "src": "07d2a79b7d6ac88c"
+      },
+      "common:tray.hotkeys": {
+        "src": "66a96da6b60937be"
+      },
+      "common:tray.miniWindow": {
+        "src": "bb5a92886a4154a4"
+      },
+      "common:tray.mute": {
+        "src": "8dd6857baf026850"
+      },
       "common:tray.open": {
         "src": "f137a8ca2bc9a7d3"
+      },
+      "common:tray.phoneLinks": {
+        "src": "74928c537ff48215"
       },
       "common:tray.quit": {
         "src": "b3eb37acb66ba4bb"
       },
       "common:tray.restart": {
         "src": "47782e3b525b81e0"
+      },
+      "common:tray.startAtLogin": {
+        "src": "85010ecd9a169aa0"
+      },
+      "common:tray.unmute": {
+        "src": "ce4ee4efc5e324fc"
       },
       "common:update.detail": {
         "src": "8e014d007a33ff8f"
@@ -340,14 +1549,107 @@
       }
     },
     "ur": {
+      "common:clipboard.body": {
+        "src": "d57c263a544baa9c"
+      },
+      "common:clipboard.title": {
+        "src": "5c1ee15b25768fd6"
+      },
+      "common:context.call": {
+        "src": "d42c9fb85b676d1b"
+      },
+      "common:mini.answer": {
+        "src": "b2a3aa602762a782"
+      },
+      "common:mini.calling": {
+        "src": "326db06c51f75866"
+      },
+      "common:mini.decline": {
+        "src": "a2d285b352873457"
+      },
+      "common:mini.hangUp": {
+        "src": "07d2a79b7d6ac88c"
+      },
+      "common:mini.incoming": {
+        "src": "a31650d8480673f5"
+      },
+      "common:mini.mute": {
+        "src": "8dd6857baf026850"
+      },
+      "common:mini.onHold": {
+        "src": "ebe7db36e4959b9b"
+      },
+      "common:mini.unmute": {
+        "src": "ce4ee4efc5e324fc"
+      },
+      "common:phoneLinks.detail": {
+        "src": "f26b173b00f75b09"
+      },
+      "common:phoneLinks.message": {
+        "src": "232821e280617acd"
+      },
+      "common:phoneLinks.no": {
+        "src": "49780701dc2d7cc6"
+      },
+      "common:phoneLinks.title": {
+        "src": "eda24e39821d51cb"
+      },
+      "common:phoneLinks.yes": {
+        "src": "d2569bfdb83f2e0c"
+      },
+      "common:share.audio": {
+        "src": "3799307187729dee"
+      },
+      "common:share.cancel": {
+        "src": "19766ed6ccb2f4a3"
+      },
+      "common:share.none": {
+        "src": "32ca2fc6cecf3991"
+      },
+      "common:share.screens": {
+        "src": "4727a1a2b79c0c21"
+      },
+      "common:share.share": {
+        "src": "29887a5ff9846ccc"
+      },
+      "common:share.title": {
+        "src": "3607f96ef8882a09"
+      },
+      "common:share.windows": {
+        "src": "d598026a9cbc6050"
+      },
+      "common:tray.dialClipboard": {
+        "src": "73414479825a85d1"
+      },
+      "common:tray.hangup": {
+        "src": "07d2a79b7d6ac88c"
+      },
+      "common:tray.hotkeys": {
+        "src": "66a96da6b60937be"
+      },
+      "common:tray.miniWindow": {
+        "src": "bb5a92886a4154a4"
+      },
+      "common:tray.mute": {
+        "src": "8dd6857baf026850"
+      },
       "common:tray.open": {
         "src": "f137a8ca2bc9a7d3"
+      },
+      "common:tray.phoneLinks": {
+        "src": "74928c537ff48215"
       },
       "common:tray.quit": {
         "src": "b3eb37acb66ba4bb"
       },
       "common:tray.restart": {
         "src": "47782e3b525b81e0"
+      },
+      "common:tray.startAtLogin": {
+        "src": "85010ecd9a169aa0"
+      },
+      "common:tray.unmute": {
+        "src": "ce4ee4efc5e324fc"
       },
       "common:update.detail": {
         "src": "8e014d007a33ff8f"
@@ -366,14 +1668,107 @@
       }
     },
     "vi": {
+      "common:clipboard.body": {
+        "src": "d57c263a544baa9c"
+      },
+      "common:clipboard.title": {
+        "src": "5c1ee15b25768fd6"
+      },
+      "common:context.call": {
+        "src": "d42c9fb85b676d1b"
+      },
+      "common:mini.answer": {
+        "src": "b2a3aa602762a782"
+      },
+      "common:mini.calling": {
+        "src": "326db06c51f75866"
+      },
+      "common:mini.decline": {
+        "src": "a2d285b352873457"
+      },
+      "common:mini.hangUp": {
+        "src": "07d2a79b7d6ac88c"
+      },
+      "common:mini.incoming": {
+        "src": "a31650d8480673f5"
+      },
+      "common:mini.mute": {
+        "src": "8dd6857baf026850"
+      },
+      "common:mini.onHold": {
+        "src": "ebe7db36e4959b9b"
+      },
+      "common:mini.unmute": {
+        "src": "ce4ee4efc5e324fc"
+      },
+      "common:phoneLinks.detail": {
+        "src": "f26b173b00f75b09"
+      },
+      "common:phoneLinks.message": {
+        "src": "232821e280617acd"
+      },
+      "common:phoneLinks.no": {
+        "src": "49780701dc2d7cc6"
+      },
+      "common:phoneLinks.title": {
+        "src": "eda24e39821d51cb"
+      },
+      "common:phoneLinks.yes": {
+        "src": "d2569bfdb83f2e0c"
+      },
+      "common:share.audio": {
+        "src": "3799307187729dee"
+      },
+      "common:share.cancel": {
+        "src": "19766ed6ccb2f4a3"
+      },
+      "common:share.none": {
+        "src": "32ca2fc6cecf3991"
+      },
+      "common:share.screens": {
+        "src": "4727a1a2b79c0c21"
+      },
+      "common:share.share": {
+        "src": "29887a5ff9846ccc"
+      },
+      "common:share.title": {
+        "src": "3607f96ef8882a09"
+      },
+      "common:share.windows": {
+        "src": "d598026a9cbc6050"
+      },
+      "common:tray.dialClipboard": {
+        "src": "73414479825a85d1"
+      },
+      "common:tray.hangup": {
+        "src": "07d2a79b7d6ac88c"
+      },
+      "common:tray.hotkeys": {
+        "src": "66a96da6b60937be"
+      },
+      "common:tray.miniWindow": {
+        "src": "bb5a92886a4154a4"
+      },
+      "common:tray.mute": {
+        "src": "8dd6857baf026850"
+      },
       "common:tray.open": {
         "src": "f137a8ca2bc9a7d3"
+      },
+      "common:tray.phoneLinks": {
+        "src": "74928c537ff48215"
       },
       "common:tray.quit": {
         "src": "b3eb37acb66ba4bb"
       },
       "common:tray.restart": {
         "src": "47782e3b525b81e0"
+      },
+      "common:tray.startAtLogin": {
+        "src": "85010ecd9a169aa0"
+      },
+      "common:tray.unmute": {
+        "src": "ce4ee4efc5e324fc"
       },
       "common:update.detail": {
         "src": "8e014d007a33ff8f"
@@ -392,14 +1787,107 @@
       }
     },
     "zh-Hans": {
+      "common:clipboard.body": {
+        "src": "d57c263a544baa9c"
+      },
+      "common:clipboard.title": {
+        "src": "5c1ee15b25768fd6"
+      },
+      "common:context.call": {
+        "src": "d42c9fb85b676d1b"
+      },
+      "common:mini.answer": {
+        "src": "b2a3aa602762a782"
+      },
+      "common:mini.calling": {
+        "src": "326db06c51f75866"
+      },
+      "common:mini.decline": {
+        "src": "a2d285b352873457"
+      },
+      "common:mini.hangUp": {
+        "src": "07d2a79b7d6ac88c"
+      },
+      "common:mini.incoming": {
+        "src": "a31650d8480673f5"
+      },
+      "common:mini.mute": {
+        "src": "8dd6857baf026850"
+      },
+      "common:mini.onHold": {
+        "src": "ebe7db36e4959b9b"
+      },
+      "common:mini.unmute": {
+        "src": "ce4ee4efc5e324fc"
+      },
+      "common:phoneLinks.detail": {
+        "src": "f26b173b00f75b09"
+      },
+      "common:phoneLinks.message": {
+        "src": "232821e280617acd"
+      },
+      "common:phoneLinks.no": {
+        "src": "49780701dc2d7cc6"
+      },
+      "common:phoneLinks.title": {
+        "src": "eda24e39821d51cb"
+      },
+      "common:phoneLinks.yes": {
+        "src": "d2569bfdb83f2e0c"
+      },
+      "common:share.audio": {
+        "src": "3799307187729dee"
+      },
+      "common:share.cancel": {
+        "src": "19766ed6ccb2f4a3"
+      },
+      "common:share.none": {
+        "src": "32ca2fc6cecf3991"
+      },
+      "common:share.screens": {
+        "src": "4727a1a2b79c0c21"
+      },
+      "common:share.share": {
+        "src": "29887a5ff9846ccc"
+      },
+      "common:share.title": {
+        "src": "3607f96ef8882a09"
+      },
+      "common:share.windows": {
+        "src": "d598026a9cbc6050"
+      },
+      "common:tray.dialClipboard": {
+        "src": "73414479825a85d1"
+      },
+      "common:tray.hangup": {
+        "src": "07d2a79b7d6ac88c"
+      },
+      "common:tray.hotkeys": {
+        "src": "66a96da6b60937be"
+      },
+      "common:tray.miniWindow": {
+        "src": "bb5a92886a4154a4"
+      },
+      "common:tray.mute": {
+        "src": "8dd6857baf026850"
+      },
       "common:tray.open": {
         "src": "f137a8ca2bc9a7d3"
+      },
+      "common:tray.phoneLinks": {
+        "src": "74928c537ff48215"
       },
       "common:tray.quit": {
         "src": "b3eb37acb66ba4bb"
       },
       "common:tray.restart": {
         "src": "47782e3b525b81e0"
+      },
+      "common:tray.startAtLogin": {
+        "src": "85010ecd9a169aa0"
+      },
+      "common:tray.unmute": {
+        "src": "ce4ee4efc5e324fc"
       },
       "common:update.detail": {
         "src": "8e014d007a33ff8f"
@@ -418,14 +1906,107 @@
       }
     },
     "zh-Hant": {
+      "common:clipboard.body": {
+        "src": "d57c263a544baa9c"
+      },
+      "common:clipboard.title": {
+        "src": "5c1ee15b25768fd6"
+      },
+      "common:context.call": {
+        "src": "d42c9fb85b676d1b"
+      },
+      "common:mini.answer": {
+        "src": "b2a3aa602762a782"
+      },
+      "common:mini.calling": {
+        "src": "326db06c51f75866"
+      },
+      "common:mini.decline": {
+        "src": "a2d285b352873457"
+      },
+      "common:mini.hangUp": {
+        "src": "07d2a79b7d6ac88c"
+      },
+      "common:mini.incoming": {
+        "src": "a31650d8480673f5"
+      },
+      "common:mini.mute": {
+        "src": "8dd6857baf026850"
+      },
+      "common:mini.onHold": {
+        "src": "ebe7db36e4959b9b"
+      },
+      "common:mini.unmute": {
+        "src": "ce4ee4efc5e324fc"
+      },
+      "common:phoneLinks.detail": {
+        "src": "f26b173b00f75b09"
+      },
+      "common:phoneLinks.message": {
+        "src": "232821e280617acd"
+      },
+      "common:phoneLinks.no": {
+        "src": "49780701dc2d7cc6"
+      },
+      "common:phoneLinks.title": {
+        "src": "eda24e39821d51cb"
+      },
+      "common:phoneLinks.yes": {
+        "src": "d2569bfdb83f2e0c"
+      },
+      "common:share.audio": {
+        "src": "3799307187729dee"
+      },
+      "common:share.cancel": {
+        "src": "19766ed6ccb2f4a3"
+      },
+      "common:share.none": {
+        "src": "32ca2fc6cecf3991"
+      },
+      "common:share.screens": {
+        "src": "4727a1a2b79c0c21"
+      },
+      "common:share.share": {
+        "src": "29887a5ff9846ccc"
+      },
+      "common:share.title": {
+        "src": "3607f96ef8882a09"
+      },
+      "common:share.windows": {
+        "src": "d598026a9cbc6050"
+      },
+      "common:tray.dialClipboard": {
+        "src": "73414479825a85d1"
+      },
+      "common:tray.hangup": {
+        "src": "07d2a79b7d6ac88c"
+      },
+      "common:tray.hotkeys": {
+        "src": "66a96da6b60937be"
+      },
+      "common:tray.miniWindow": {
+        "src": "bb5a92886a4154a4"
+      },
+      "common:tray.mute": {
+        "src": "8dd6857baf026850"
+      },
       "common:tray.open": {
         "src": "f137a8ca2bc9a7d3"
+      },
+      "common:tray.phoneLinks": {
+        "src": "74928c537ff48215"
       },
       "common:tray.quit": {
         "src": "b3eb37acb66ba4bb"
       },
       "common:tray.restart": {
         "src": "47782e3b525b81e0"
+      },
+      "common:tray.startAtLogin": {
+        "src": "85010ecd9a169aa0"
+      },
+      "common:tray.unmute": {
+        "src": "ce4ee4efc5e324fc"
       },
       "common:update.detail": {
         "src": "8e014d007a33ff8f"

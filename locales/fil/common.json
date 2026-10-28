@@ -2,7 +2,24 @@
   "tray": {
     "open": "Buksan ang PulseVoice",
     "restart": "I-restart para mag-update ({{version}})",
-    "quit": "Umalis"
+    "quit": "Umalis",
+    "mute": "I-mute",
+    "unmute": "I-unmute",
+    "hangup": "Ibaba ang tawag",
+    "dialClipboard": "I-dial ang numero mula sa clipboard",
+    "startAtLogin": "Magsimula pag-login",
+    "hotkeys": "Mga global hotkey",
+    "phoneLinks": "Buksan ang mga phone link (tel:, sip:)",
+    "miniWindow": "Mini na window ng tawag"
+  },
+  "share": {
+    "title": "Piliin kung ano ang ibabahagi",
+    "screens": "Mga screen",
+    "windows": "Mga window",
+    "none": "Walang maibabahagi rito.",
+    "audio": "Ibahagi rin ang tunog ng computer",
+    "share": "Ibahagi",
+    "cancel": "Kanselahin"
   },
   "update": {
     "restartNow": "I-restart ngayon",
@@ -10,5 +27,29 @@
     "title": "Update sa PulseVoice",
     "message": "Handa nang i-install ang PulseVoice {{version}}.",
     "detail": "Magsasara ang PulseVoice nang ilang segundo at magbubukas muli. Kung pipiliin ninyo ang Mamaya na, mai-install ito sa susunod na pag-restart ng PulseVoice."
+  },
+  "phoneLinks": {
+    "title": "Mga phone link",
+    "message": "Gamitin ang PulseVoice para sa mga phone link?",
+    "detail": "Kapag nag-click kayo ng link ng numero ng telepono (tel: o sip:) sa browser o ibang app, magbubukas ang PulseVoice na nasa dialer ang numero. Hindi ito tatawag nang kusa. Maaari ninyo itong baguhin sa tray menu o sa Mga Setting.",
+    "yes": "Gamitin ang PulseVoice",
+    "no": "Huwag na lang"
+  },
+  "context": {
+    "call": "Tawagan ang {{number}} gamit ang PulseVoice"
+  },
+  "clipboard": {
+    "title": "Walang ida-dial",
+    "body": "Walang numero ng telepono sa clipboard."
+  },
+  "mini": {
+    "incoming": "Papasok na tawag",
+    "calling": "Tumatawag…",
+    "onHold": "Naka-hold",
+    "answer": "Sagutin",
+    "decline": "Tanggihan",
+    "hangUp": "Ibaba",
+    "mute": "I-mute",
+    "unmute": "I-unmute"
   }
 }

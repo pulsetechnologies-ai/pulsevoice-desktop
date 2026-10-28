@@ -2,7 +2,24 @@
   "tray": {
     "open": "打开 PulseVoice",
     "restart": "重启以更新({{version}})",
-    "quit": "退出"
+    "quit": "退出",
+    "mute": "静音",
+    "unmute": "取消静音",
+    "hangup": "挂断",
+    "dialClipboard": "拨打剪贴板中的号码",
+    "startAtLogin": "登录时启动",
+    "hotkeys": "全局快捷键",
+    "phoneLinks": "打开电话链接(tel:、sip:)",
+    "miniWindow": "迷你通话窗口"
+  },
+  "share": {
+    "title": "选择要共享的内容",
+    "screens": "屏幕",
+    "windows": "窗口",
+    "none": "此处没有可共享的内容。",
+    "audio": "同时共享计算机声音",
+    "share": "共享",
+    "cancel": "取消"
   },
   "update": {
     "restartNow": "立即重启",
@@ -10,5 +27,29 @@
     "title": "PulseVoice 更新",
     "message": "PulseVoice {{version}} 已可安装。",
     "detail": "PulseVoice 将关闭几秒钟后重新打开。如果您选择“稍后”,将在 PulseVoice 下次重启时安装。"
+  },
+  "phoneLinks": {
+    "title": "电话链接",
+    "message": "使用 PulseVoice 打开电话链接吗?",
+    "detail": "当您在浏览器或其他应用中点击电话号码链接(tel: 或 sip:)时,PulseVoice 会打开并在拨号盘中填入该号码。它不会自动拨打电话。您之后可以在托盘菜单或“设置”中更改此选项。",
+    "yes": "使用 PulseVoice",
+    "no": "不用了"
+  },
+  "context": {
+    "call": "使用 PulseVoice 拨打 {{number}}"
+  },
+  "clipboard": {
+    "title": "没有可拨打的号码",
+    "body": "剪贴板中不包含电话号码。"
+  },
+  "mini": {
+    "incoming": "来电",
+    "calling": "正在呼叫…",
+    "onHold": "通话保持中",
+    "answer": "接听",
+    "decline": "拒接",
+    "hangUp": "挂断",
+    "mute": "静音",
+    "unmute": "取消静音"
   }
 }

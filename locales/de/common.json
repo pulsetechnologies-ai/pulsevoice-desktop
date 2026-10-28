@@ -2,7 +2,24 @@
   "tray": {
     "open": "PulseVoice öffnen",
     "restart": "Zum Aktualisieren neu starten ({{version}})",
-    "quit": "Beenden"
+    "quit": "Beenden",
+    "mute": "Stummschalten",
+    "unmute": "Stummschaltung aufheben",
+    "hangup": "Auflegen",
+    "dialClipboard": "Nummer aus Zwischenablage wählen",
+    "startAtLogin": "Beim Anmelden starten",
+    "hotkeys": "Globale Tastenkombinationen",
+    "phoneLinks": "Telefonlinks öffnen (tel:, sip:)",
+    "miniWindow": "Mini-Anruffenster"
+  },
+  "share": {
+    "title": "Freizugebende Inhalte auswählen",
+    "screens": "Bildschirme",
+    "windows": "Fenster",
+    "none": "Hier gibt es nichts freizugeben.",
+    "audio": "Auch Computerton freigeben",
+    "share": "Freigeben",
+    "cancel": "Abbrechen"
   },
   "update": {
     "restartNow": "Jetzt neu starten",
@@ -10,5 +27,29 @@
     "title": "PulseVoice-Update",
     "message": "PulseVoice {{version}} kann installiert werden.",
     "detail": "PulseVoice wird für einige Sekunden geschlossen und dann neu geöffnet. Wenn Sie „Später“ wählen, wird das Update beim nächsten Neustart von PulseVoice installiert."
+  },
+  "phoneLinks": {
+    "title": "Telefonlinks",
+    "message": "PulseVoice für Telefonlinks verwenden?",
+    "detail": "Wenn Sie in einem Browser oder einer anderen App auf einen Telefonnummern-Link (tel: oder sip:) klicken, öffnet sich PulseVoice mit der Nummer im Wählfeld. Es wird nie automatisch angerufen. Sie können dies später im Tray-Menü oder in den Einstellungen ändern.",
+    "yes": "PulseVoice verwenden",
+    "no": "Nein, danke"
+  },
+  "context": {
+    "call": "{{number}} mit PulseVoice anrufen"
+  },
+  "clipboard": {
+    "title": "Keine Nummer zum Wählen",
+    "body": "Die Zwischenablage enthält keine Telefonnummer."
+  },
+  "mini": {
+    "incoming": "Eingehender Anruf",
+    "calling": "Anruf wird aufgebaut…",
+    "onHold": "In der Warteschleife",
+    "answer": "Annehmen",
+    "decline": "Ablehnen",
+    "hangUp": "Auflegen",
+    "mute": "Stummschalten",
+    "unmute": "Stumm aus"
   }
 }

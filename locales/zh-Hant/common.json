@@ -2,7 +2,24 @@
   "tray": {
     "open": "開啟 PulseVoice",
     "restart": "重新啟動以更新 ({{version}})",
-    "quit": "結束"
+    "quit": "結束",
+    "mute": "靜音",
+    "unmute": "取消靜音",
+    "hangup": "掛斷",
+    "dialClipboard": "撥打剪貼簿中的號碼",
+    "startAtLogin": "登入時啟動",
+    "hotkeys": "全域快速鍵",
+    "phoneLinks": "開啟電話連結（tel:、sip:）",
+    "miniWindow": "迷你通話視窗"
+  },
+  "share": {
+    "title": "選擇要分享的內容",
+    "screens": "螢幕",
+    "windows": "視窗",
+    "none": "此處沒有可分享的內容。",
+    "audio": "同時分享電腦音訊",
+    "share": "分享",
+    "cancel": "取消"
   },
   "update": {
     "restartNow": "立即重新啟動",
@@ -10,5 +27,29 @@
     "title": "PulseVoice 更新",
     "message": "PulseVoice {{version}} 已可安裝。",
     "detail": "PulseVoice 將關閉數秒後重新開啟。若您選擇「稍後」,將於下次 PulseVoice 重新啟動時安裝。"
+  },
+  "phoneLinks": {
+    "title": "電話連結",
+    "message": "要使用 PulseVoice 開啟電話連結嗎？",
+    "detail": "當您在瀏覽器或其他應用程式中點擊電話號碼連結（tel: 或 sip:）時，PulseVoice 會開啟並將號碼帶入撥號畫面，不會自動撥打。您之後可在系統匣選單或「設定」中變更此選項。",
+    "yes": "使用 PulseVoice",
+    "no": "不用了"
+  },
+  "context": {
+    "call": "使用 PulseVoice 撥打 {{number}}"
+  },
+  "clipboard": {
+    "title": "沒有可撥打的號碼",
+    "body": "剪貼簿中沒有電話號碼。"
+  },
+  "mini": {
+    "incoming": "來電",
+    "calling": "撥號中…",
+    "onHold": "保留中",
+    "answer": "接聽",
+    "decline": "拒接",
+    "hangUp": "掛斷",
+    "mute": "靜音",
+    "unmute": "取消靜音"
   }
 }

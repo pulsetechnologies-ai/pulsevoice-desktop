@@ -2,7 +2,24 @@
   "tray": {
     "open": "PulseVoiceを開く",
     "restart": "再起動して更新 ({{version}})",
-    "quit": "終了"
+    "quit": "終了",
+    "mute": "ミュート",
+    "unmute": "ミュート解除",
+    "hangup": "通話を終了",
+    "dialClipboard": "クリップボードの番号に発信",
+    "startAtLogin": "ログイン時に起動",
+    "hotkeys": "グローバルホットキー",
+    "phoneLinks": "電話リンクを開く (tel:、sip:)",
+    "miniWindow": "ミニ通話ウィンドウ"
+  },
+  "share": {
+    "title": "共有する対象を選択",
+    "screens": "画面",
+    "windows": "ウィンドウ",
+    "none": "共有できるものがありません。",
+    "audio": "コンピューターの音声も共有",
+    "share": "共有",
+    "cancel": "キャンセル"
   },
   "update": {
     "restartNow": "今すぐ再起動",
@@ -10,5 +27,29 @@
     "title": "PulseVoiceのアップデート",
     "message": "PulseVoice {{version}} をインストールする準備ができました。",
     "detail": "PulseVoiceは数秒間終了した後、再起動します。「後で」を選択した場合は、次回PulseVoiceを再起動するときにインストールされます。"
+  },
+  "phoneLinks": {
+    "title": "電話リンク",
+    "message": "電話リンクにPulseVoiceを使用しますか?",
+    "detail": "ブラウザーや他のアプリで電話番号のリンク (tel: または sip:) をクリックすると、PulseVoiceが起動し、ダイヤラーに番号が入力されます。自動で発信されることはありません。この設定は、後からトレイメニューまたは設定で変更できます。",
+    "yes": "PulseVoiceを使用する",
+    "no": "使用しない"
+  },
+  "context": {
+    "call": "PulseVoiceで{{number}}に発信"
+  },
+  "clipboard": {
+    "title": "発信できる番号がありません",
+    "body": "クリップボードに電話番号が含まれていません。"
+  },
+  "mini": {
+    "incoming": "着信中",
+    "calling": "発信中…",
+    "onHold": "保留中",
+    "answer": "応答",
+    "decline": "拒否",
+    "hangUp": "終了",
+    "mute": "ミュート",
+    "unmute": "ミュート解除"
   }
 }
