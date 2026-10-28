@@ -2,7 +2,24 @@
   "tray": {
     "open": "Ouvrir PulseVoice",
     "restart": "Redémarrer pour mettre à jour ({{version}})",
-    "quit": "Quitter"
+    "quit": "Quitter",
+    "mute": "Couper le micro",
+    "unmute": "Réactiver le micro",
+    "hangup": "Raccrocher",
+    "dialClipboard": "Composer le numéro du presse-papiers",
+    "startAtLogin": "Lancer à l'ouverture de session",
+    "hotkeys": "Raccourcis clavier globaux",
+    "phoneLinks": "Ouvrir les liens téléphoniques (tel:, sip:)",
+    "miniWindow": "Mini-fenêtre d'appel"
+  },
+  "share": {
+    "title": "Choisissez ce que vous souhaitez partager",
+    "screens": "Écrans",
+    "windows": "Fenêtres",
+    "none": "Rien à partager ici.",
+    "audio": "Partager aussi le son de l'ordinateur",
+    "share": "Partager",
+    "cancel": "Annuler"
   },
   "update": {
     "restartNow": "Redémarrer maintenant",
@@ -10,5 +27,29 @@
     "title": "Mise à jour de PulseVoice",
     "message": "PulseVoice {{version}} est prêt à être installé.",
     "detail": "PulseVoice va se fermer quelques secondes, puis se rouvrir. Si vous choisissez Plus tard, la mise à jour s'installera au prochain redémarrage de PulseVoice."
+  },
+  "phoneLinks": {
+    "title": "Liens téléphoniques",
+    "message": "Utiliser PulseVoice pour les liens téléphoniques ?",
+    "detail": "Lorsque vous cliquez sur un lien de numéro de téléphone (tel: ou sip:) dans un navigateur ou une autre application, PulseVoice s'ouvre avec le numéro dans le clavier. Aucun appel n'est lancé automatiquement. Vous pourrez modifier ce choix plus tard depuis le menu de la barre d'état ou dans les Paramètres.",
+    "yes": "Utiliser PulseVoice",
+    "no": "Non merci"
+  },
+  "context": {
+    "call": "Appeler {{number}} avec PulseVoice"
+  },
+  "clipboard": {
+    "title": "Aucun numéro à composer",
+    "body": "Le presse-papiers ne contient pas de numéro de téléphone."
+  },
+  "mini": {
+    "incoming": "Appel entrant",
+    "calling": "Appel en cours…",
+    "onHold": "En attente",
+    "answer": "Répondre",
+    "decline": "Refuser",
+    "hangUp": "Raccrocher",
+    "mute": "Couper le micro",
+    "unmute": "Réactiver le micro"
   }
 }

@@ -2,7 +2,24 @@
   "tray": {
     "open": "Abrir o PulseVoice",
     "restart": "Reiniciar para atualizar ({{version}})",
-    "quit": "Sair"
+    "quit": "Sair",
+    "mute": "Silenciar",
+    "unmute": "Ativar som",
+    "hangup": "Desligar",
+    "dialClipboard": "Discar número da área de transferência",
+    "startAtLogin": "Iniciar ao fazer login",
+    "hotkeys": "Atalhos globais",
+    "phoneLinks": "Abrir links de telefone (tel:, sip:)",
+    "miniWindow": "Minijanela de chamada"
+  },
+  "share": {
+    "title": "Escolha o que compartilhar",
+    "screens": "Telas",
+    "windows": "Janelas",
+    "none": "Nada para compartilhar aqui.",
+    "audio": "Compartilhar também o som do computador",
+    "share": "Compartilhar",
+    "cancel": "Cancelar"
   },
   "update": {
     "restartNow": "Reiniciar agora",
@@ -10,5 +27,29 @@
     "title": "Atualização do PulseVoice",
     "message": "O PulseVoice {{version}} está pronto para ser instalado.",
     "detail": "O PulseVoice será fechado por alguns segundos e reaberto. Se você escolher Mais tarde, a atualização será instalada na próxima vez que o PulseVoice for reiniciado."
+  },
+  "phoneLinks": {
+    "title": "Links de telefone",
+    "message": "Usar o PulseVoice para links de telefone?",
+    "detail": "Ao clicar em um link de número de telefone (tel: ou sip:) em um navegador ou outro app, o PulseVoice abre com o número no discador. Ele nunca liga sozinho. Você pode alterar isso depois no menu da bandeja ou em Configurações.",
+    "yes": "Usar o PulseVoice",
+    "no": "Não, obrigado"
+  },
+  "context": {
+    "call": "Ligar para {{number}} com o PulseVoice"
+  },
+  "clipboard": {
+    "title": "Nada para discar",
+    "body": "A área de transferência não contém um número de telefone."
+  },
+  "mini": {
+    "incoming": "Chamada recebida",
+    "calling": "Chamando…",
+    "onHold": "Em espera",
+    "answer": "Atender",
+    "decline": "Recusar",
+    "hangUp": "Desligar",
+    "mute": "Silenciar",
+    "unmute": "Ativar som"
   }
 }

@@ -2,7 +2,24 @@
   "tray": {
     "open": "Louvri PulseVoice",
     "restart": "Redémarre pou mete ajou ({{version}})",
-    "quit": "Soti"
+    "quit": "Soti",
+    "mute": "Koupe mikwo",
+    "unmute": "Louvri mikwo",
+    "hangup": "Rakroche",
+    "dialClipboard": "Konpoze nimewo ki nan près-papye a",
+    "startAtLogin": "Demare lè w konekte",
+    "hotkeys": "Rakousi global",
+    "phoneLinks": "Louvri lyen telefòn (tel:, sip:)",
+    "miniWindow": "Ti fenèt apèl"
+  },
+  "share": {
+    "title": "Chwazi sa w vle pataje",
+    "screens": "Ekran",
+    "windows": "Fenèt",
+    "none": "Pa gen anyen pou pataje isit la.",
+    "audio": "Pataje son òdinatè a tou",
+    "share": "Pataje",
+    "cancel": "Anile"
   },
   "update": {
     "restartNow": "Redémarre kounye a",
@@ -10,5 +27,29 @@
     "title": "Mizajou PulseVoice",
     "message": "PulseVoice {{version}} pare pou enstale.",
     "detail": "PulseVoice pral fèmen pou kèk segonn epi li pral louvri ankò. Si ou chwazi Pita, l ap enstale pwochen fwa PulseVoice redémarre."
+  },
+  "phoneLinks": {
+    "title": "Lyen telefòn",
+    "message": "Itilize PulseVoice pou lyen telefòn yo?",
+    "detail": "Lè w klike sou yon lyen nimewo telefòn (tel: oswa sip:) nan yon navigatè oswa nan yon lòt aplikasyon, PulseVoice ouvri ak nimewo a nan klavye a. Li pa janm rele pou kont li. Ou ka chanje sa pita nan meni plato sistèm nan oswa nan Paramèt.",
+    "yes": "Itilize PulseVoice",
+    "no": "Non, mèsi"
+  },
+  "context": {
+    "call": "Rele {{number}} avèk PulseVoice"
+  },
+  "clipboard": {
+    "title": "Pa gen anyen pou konpoze",
+    "body": "Près-papye a pa gen nimewo telefòn."
+  },
+  "mini": {
+    "incoming": "Apèl k ap antre",
+    "calling": "Ap rele…",
+    "onHold": "An datant",
+    "answer": "Reponn",
+    "decline": "Refize",
+    "hangUp": "Rakroche",
+    "mute": "Koupe mikwo",
+    "unmute": "Louvri mikwo"
   }
 }

@@ -2,7 +2,24 @@
   "tray": {
     "open": "Buka PulseVoice",
     "restart": "Mulai ulang untuk memperbarui ({{version}})",
-    "quit": "Keluar"
+    "quit": "Keluar",
+    "mute": "Bisukan",
+    "unmute": "Aktifkan suara",
+    "hangup": "Akhiri panggilan",
+    "dialClipboard": "Hubungi nomor dari papan klip",
+    "startAtLogin": "Mulai saat login",
+    "hotkeys": "Pintasan global",
+    "phoneLinks": "Buka tautan telepon (tel:, sip:)",
+    "miniWindow": "Jendela panggilan mini"
+  },
+  "share": {
+    "title": "Pilih yang akan dibagikan",
+    "screens": "Layar",
+    "windows": "Jendela",
+    "none": "Tidak ada yang dapat dibagikan di sini.",
+    "audio": "Bagikan juga suara komputer",
+    "share": "Bagikan",
+    "cancel": "Batal"
   },
   "update": {
     "restartNow": "Mulai ulang sekarang",
@@ -10,5 +27,29 @@
     "title": "Pembaruan PulseVoice",
     "message": "PulseVoice {{version}} siap dipasang.",
     "detail": "PulseVoice akan menutup selama beberapa detik lalu terbuka kembali. Jika Anda memilih Nanti, pembaruan akan dipasang saat PulseVoice dimulai ulang berikutnya."
+  },
+  "phoneLinks": {
+    "title": "Tautan telepon",
+    "message": "Gunakan PulseVoice untuk tautan telepon?",
+    "detail": "Saat Anda mengeklik tautan nomor telepon (tel: atau sip:) di browser atau aplikasi lain, PulseVoice akan terbuka dengan nomor tersebut di dialer. Aplikasi tidak pernah menelepon sendiri. Anda dapat mengubahnya nanti dari menu tray atau di Pengaturan.",
+    "yes": "Gunakan PulseVoice",
+    "no": "Tidak, terima kasih"
+  },
+  "context": {
+    "call": "Hubungi {{number}} dengan PulseVoice"
+  },
+  "clipboard": {
+    "title": "Tidak ada nomor untuk dihubungi",
+    "body": "Papan klip tidak berisi nomor telepon."
+  },
+  "mini": {
+    "incoming": "Panggilan masuk",
+    "calling": "Menghubungi…",
+    "onHold": "Ditahan",
+    "answer": "Jawab",
+    "decline": "Tolak",
+    "hangUp": "Akhiri",
+    "mute": "Bisukan",
+    "unmute": "Aktifkan suara"
   }
 }

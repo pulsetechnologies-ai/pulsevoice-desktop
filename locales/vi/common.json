@@ -2,7 +2,24 @@
   "tray": {
     "open": "Mở PulseVoice",
     "restart": "Khởi động lại để cập nhật ({{version}})",
-    "quit": "Thoát"
+    "quit": "Thoát",
+    "mute": "Tắt tiếng",
+    "unmute": "Bật tiếng",
+    "hangup": "Cúp máy",
+    "dialClipboard": "Gọi số từ bộ nhớ tạm",
+    "startAtLogin": "Khởi động khi đăng nhập",
+    "hotkeys": "Phím tắt toàn cục",
+    "phoneLinks": "Mở liên kết điện thoại (tel:, sip:)",
+    "miniWindow": "Cửa sổ cuộc gọi nhỏ"
+  },
+  "share": {
+    "title": "Chọn nội dung để chia sẻ",
+    "screens": "Màn hình",
+    "windows": "Cửa sổ",
+    "none": "Không có nội dung để chia sẻ.",
+    "audio": "Chia sẻ cả âm thanh máy tính",
+    "share": "Chia sẻ",
+    "cancel": "Hủy"
   },
   "update": {
     "restartNow": "Khởi động lại ngay",
@@ -10,5 +27,29 @@
     "title": "Cập nhật PulseVoice",
     "message": "PulseVoice {{version}} đã sẵn sàng để cài đặt.",
     "detail": "PulseVoice sẽ đóng trong vài giây rồi mở lại. Nếu bạn chọn Để sau, bản cập nhật sẽ được cài đặt vào lần PulseVoice khởi động lại tiếp theo."
+  },
+  "phoneLinks": {
+    "title": "Liên kết điện thoại",
+    "message": "Dùng PulseVoice cho liên kết điện thoại?",
+    "detail": "Khi bạn nhấp vào liên kết số điện thoại (tel: hoặc sip:) trong trình duyệt hoặc ứng dụng khác, PulseVoice sẽ mở và nhập số vào bàn phím gọi. Ứng dụng không bao giờ tự gọi. Bạn có thể thay đổi sau trong menu khay hoặc trong Cài đặt.",
+    "yes": "Dùng PulseVoice",
+    "no": "Không, cảm ơn"
+  },
+  "context": {
+    "call": "Gọi {{number}} bằng PulseVoice"
+  },
+  "clipboard": {
+    "title": "Không có số để gọi",
+    "body": "Bộ nhớ tạm không chứa số điện thoại."
+  },
+  "mini": {
+    "incoming": "Cuộc gọi đến",
+    "calling": "Đang gọi…",
+    "onHold": "Đang giữ cuộc gọi",
+    "answer": "Trả lời",
+    "decline": "Từ chối",
+    "hangUp": "Cúp máy",
+    "mute": "Tắt tiếng",
+    "unmute": "Bật tiếng"
   }
 }

@@ -2,7 +2,24 @@
   "tray": {
     "open": "PulseVoice 열기",
     "restart": "다시 시작하여 업데이트 ({{version}})",
-    "quit": "종료"
+    "quit": "종료",
+    "mute": "음소거",
+    "unmute": "음소거 해제",
+    "hangup": "통화 종료",
+    "dialClipboard": "클립보드의 번호로 전화 걸기",
+    "startAtLogin": "로그인 시 자동 시작",
+    "hotkeys": "전역 단축키",
+    "phoneLinks": "전화 링크 열기(tel:, sip:)",
+    "miniWindow": "미니 통화 창"
+  },
+  "share": {
+    "title": "공유할 항목 선택",
+    "screens": "화면",
+    "windows": "창",
+    "none": "공유할 항목이 없습니다.",
+    "audio": "컴퓨터 소리도 함께 공유",
+    "share": "공유",
+    "cancel": "취소"
   },
   "update": {
     "restartNow": "지금 다시 시작",
@@ -10,5 +27,29 @@
     "title": "PulseVoice 업데이트",
     "message": "PulseVoice {{version}}을(를) 설치할 준비가 되었습니다.",
     "detail": "PulseVoice가 몇 초 동안 종료되었다가 다시 열립니다. 나중에를 선택하면 다음에 PulseVoice를 다시 시작할 때 설치됩니다."
+  },
+  "phoneLinks": {
+    "title": "전화 링크",
+    "message": "전화 링크를 PulseVoice로 여시겠습니까?",
+    "detail": "브라우저나 다른 앱에서 전화번호 링크(tel: 또는 sip:)를 클릭하면 PulseVoice가 열리고 다이얼러에 번호가 입력됩니다. 자동으로 전화를 걸지는 않습니다. 나중에 트레이 메뉴 또는 설정에서 변경할 수 있습니다.",
+    "yes": "PulseVoice 사용",
+    "no": "사용 안 함"
+  },
+  "context": {
+    "call": "PulseVoice로 {{number}}에 전화 걸기"
+  },
+  "clipboard": {
+    "title": "전화를 걸 번호가 없습니다",
+    "body": "클립보드에 전화번호가 없습니다."
+  },
+  "mini": {
+    "incoming": "수신 전화",
+    "calling": "전화 거는 중…",
+    "onHold": "대기 중",
+    "answer": "수락",
+    "decline": "거절",
+    "hangUp": "통화 종료",
+    "mute": "음소거",
+    "unmute": "음소거 해제"
   }
 }

@@ -2,7 +2,24 @@
   "tray": {
     "open": "Abrir PulseVoice",
     "restart": "Reiniciar para actualizar ({{version}})",
-    "quit": "Salir"
+    "quit": "Salir",
+    "mute": "Silenciar",
+    "unmute": "Activar sonido",
+    "hangup": "Colgar",
+    "dialClipboard": "Marcar número del portapapeles",
+    "startAtLogin": "Iniciar al iniciar sesión",
+    "hotkeys": "Atajos de teclado globales",
+    "phoneLinks": "Abrir enlaces telefónicos (tel:, sip:)",
+    "miniWindow": "Miniventana de llamada"
+  },
+  "share": {
+    "title": "Elija qué compartir",
+    "screens": "Pantallas",
+    "windows": "Ventanas",
+    "none": "No hay nada que compartir aquí.",
+    "audio": "Compartir también el sonido del equipo",
+    "share": "Compartir",
+    "cancel": "Cancelar"
   },
   "update": {
     "restartNow": "Reiniciar ahora",
@@ -10,5 +27,29 @@
     "title": "Actualización de PulseVoice",
     "message": "PulseVoice {{version}} está listo para instalarse.",
     "detail": "PulseVoice se cerrará unos segundos y volverá a abrirse. Si elige Más tarde, se instalará la próxima vez que se reinicie PulseVoice."
+  },
+  "phoneLinks": {
+    "title": "Enlaces telefónicos",
+    "message": "¿Desea usar PulseVoice para los enlaces telefónicos?",
+    "detail": "Al hacer clic en un enlace de número de teléfono (tel: o sip:) en un navegador u otra aplicación, PulseVoice se abre con el número en el marcador. Nunca llama por sí solo. Puede cambiar esto más tarde desde el menú de la bandeja o en Ajustes.",
+    "yes": "Usar PulseVoice",
+    "no": "No, gracias"
+  },
+  "context": {
+    "call": "Llamar a {{number}} con PulseVoice"
+  },
+  "clipboard": {
+    "title": "Nada que marcar",
+    "body": "El portapapeles no contiene un número de teléfono."
+  },
+  "mini": {
+    "incoming": "Llamada entrante",
+    "calling": "Llamando…",
+    "onHold": "En espera",
+    "answer": "Responder",
+    "decline": "Rechazar",
+    "hangUp": "Colgar",
+    "mute": "Silenciar",
+    "unmute": "Activar sonido"
   }
 }
