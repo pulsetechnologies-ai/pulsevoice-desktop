@@ -63,6 +63,11 @@ const pendingLinks = []; // macOS open-url events that arrive before the window 
 // Screen Wake Lock it holds while the window is minimised or in the tray.
 let callBlocker = null;
 function setCallActive(active) {
+  // While a call or meeting is up the page must keep running when the window is covered by another app or minimized:
+  // Chromium otherwise reports it hidden, stops requestAnimationFrame and throttles timers, which froze the camera
+  // the web app sends (measured: 0 frames with the window behind Outlook). Outside a call keep the default so a
+  // window parked in the tray costs nothing.
+  if (win && !win.isDestroyed() && !win.webContents.isDestroyed()) win.webContents.setBackgroundThrottling(!active);
   if (active && callBlocker === null) {
     callBlocker = powerSaveBlocker.start('prevent-display-sleep');
   } else if (!active && callBlocker !== null) {
