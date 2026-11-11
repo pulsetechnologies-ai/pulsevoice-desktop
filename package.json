@@ -15,7 +15,7 @@
     "test": "node --test \"test/*.test.js\""
   },
   "devDependencies": {
-    "electron": "^44.9.3",
+    "electron": "^44.10.2",
     "electron-builder": "^26.18.0",
     "@anthropic-ai/sdk": "^0.131.0"
   },
