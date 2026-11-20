@@ -1,0 +1,16 @@
+# Trivy ignore file (structured) for .github/workflows/security-scan.yml.
+#
+# The Security Scan FAILS the build on CRITICAL/HIGH vulnerabilities that have a fix.
+# An entry here is an ACCEPTED EXCEPTION, not a silenced finding. Every entry must have:
+#   - id:          the CVE / GHSA / rule id
+#   - paths:       the lockfile(s) or file(s) it applies to (keep it narrow)
+#   - statement:   why it is accepted (not reachable, dev-only build tool, no safe
+#                  upgrade yet, ...) and who reviewed it
+#   - expired_at:  at most 90 days out for a real vulnerability (up to 12 months for a
+#                  confirmed false positive); after it the exception stops applying
+#                  and the build fails again until it is fixed or re-reviewed
+# Review this file in every PR that touches it.
+#
+# Format: https://trivy.dev/latest/docs/configuration/filtering/#trivyignoreyaml
+
+vulnerabilities: []

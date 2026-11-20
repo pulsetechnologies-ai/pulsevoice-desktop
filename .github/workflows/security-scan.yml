@@ -1,0 +1,51 @@
+# Internal vulnerability scanning for this repository's code and dependencies.
+# Supports PCI DSS 11.3.1 (internal vulnerability scans of in-scope components).
+# Runs on every push/PR and weekly on a schedule, via Trivy.
+#
+# GATE: the first step FAILS the build on any CRITICAL or HIGH vulnerability that has
+# a fixed version available (ignore-unfixed). Fix it by bumping the dependency.
+# If a finding genuinely cannot be fixed yet, add a reviewed exception to
+# .trivyignore.yaml with a `statement` (reason) and an `expired_at` date; once the
+# date passes the exception stops applying and the build fails again.
+#
+# The second step reports misconfigurations and hard-coded secrets. It does not fail
+# the build yet; review its table on every run.
+name: Security Scan
+on:
+  push:
+    branches: [main, master]
+  pull_request:
+  schedule:
+    - cron: "0 6 * * 1"
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  trivy:
+    name: Trivy vulnerability scan
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v7
+      - name: Trivy vulnerability gate (fails on fixable CRITICAL/HIGH)
+        uses: aquasecurity/trivy-action@v0.36.0
+        with:
+          scan-type: fs
+          scan-ref: .
+          scanners: vuln
+          severity: CRITICAL,HIGH
+          ignore-unfixed: true
+          trivyignores: .trivyignore.yaml
+          exit-code: "1"
+          format: table
+      - name: Trivy config and secret scan (report only)
+        if: always()
+        uses: aquasecurity/trivy-action@v0.36.0
+        with:
+          scan-type: fs
+          scan-ref: .
+          scanners: misconfig,secret
+          severity: CRITICAL,HIGH
+          trivyignores: .trivyignore.yaml
+          exit-code: "0"
+          format: table
